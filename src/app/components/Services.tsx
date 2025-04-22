@@ -1,38 +1,38 @@
 import Image from "next/image";
 const services = [
     {
-        title: "Personal Loans",
-        description: "Our Personal Loans offer flexible terms and competitive rates, tailored to meet your individual needs.",
+        title: "Fleet-Based Swarm Intelligence",
+        description: "AUVs operate as a coordinated swarm to create real-time virtual defense perimeters.",
         image: "/img/services/services-1.png",
         iconClass: "flaticon-personal",
     },
     {
-        title: "Emergency Loans",
-        description: "Quick and reliable emergency loans, providing fast access to funds when you need them most. Apply now for instant relief.",
+        title: "Generative AI Navigation",
+        description: "Autonomous decision-making powered by real-time data from multi-sensor inputs.",
         image: "/img/services/services-2.png",
         iconClass: "flaticon-money-bag-1",
     },
     {
-        title: "Business Loans",
-        description: "Empower your business with our flexible financing options. Tailored to meet the unique needs of your enterprise.",
+        title: "Solar-Powered Endurance",
+        description: "Wing-mounted solar panels recharge the Li-ion battery, enabling continuous missions.",
         image: "/img/services/services-3.png",
         iconClass: "flaticon-money-bag",
     },
     {
-        title: "Student Loans",
-        description: "Student loans open doors to education but can also become a heavy financial burden if not managed wisely. Plan carefully.",
+        title: "Encrypted Data Transmission",
+        description: "Blockchain-backed systems ensure secure communication and mission integrity.",
         image: "/img/services/services-4.png",
         iconClass: "flaticon-mortarboard",
     },
     {
-        title: "Mortgage Loans",
-        description: "Secure your dream home with our competitive mortgage loans. Enjoy flexible terms, low interest rates",
+        title: "Modular Sensor Architecture",
+        description: "Easily integrates sonar, LiDAR, chemical, thermal, and electromagnetic sensors.",
         image: "/img/services/services-5.png",
         iconClass: "flaticon-mortgage-loan",
     },
     {
-        title: "Small Business Loans",
-        description: "This content highlights the key benefits of your small business loan offerings, appealing to entrepreneurs seeking financial support.",
+        title: "Mission Flexibility",
+        description: "From reconnaissance to mine detection, AUVs adapt to a wide range of naval tasks.",
         image: "/img/services/services-6.png",
         iconClass: "flaticon-loan-1",
     },
@@ -48,11 +48,10 @@ export default function Services() {
             </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-8 m-auto">
+                    <div className="col-lg-6 m-auto">
                         <div className="heading-box text-center">
-                            <span className="heading-subtitle wow fadeInUp animated animated">🤝 OUR SERVICES</span>
-                            <h2 className="heading-title wow fadeInUp animated animated">Comprehensive financial
-                                solutions tailored to your needs</h2>
+                            <span className="heading-subtitle wow fadeInUp animated animated">OUR FEATURES</span>
+                            <h2 className="heading-title wow fadeInUp animated animated">Advanced Features Powering Next-Gen AUVs</h2>
                         </div>
                     </div>
                 </div>

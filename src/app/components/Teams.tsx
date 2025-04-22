@@ -2,20 +2,13 @@ import Image from "next/image";
 
 export default function Teams() {
     return (
-        <section className="team-one">
-            <div className="team-shape-one-1">
-                <Image src="/img/shape/team-shape-1.png" width="90" height="70" alt="shape" />
-            </div>
-            <div className="team-shape-one-2">
-                <Image src="/img/shape/team-shape-2.png" width="90" height="70" alt="shape" />
-            </div>
+        <section className="team-one bg-white">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 col-md-12 m-auto">
                         <div className="heading-box text-center">
-                            <span className="heading-subtitle wow fadeInUp animated animated">🤝 OUR TEAM</span>
-                            <h2 className="heading-title wow fadeInUp animated animated">The team driving innovation and
-                                excellence in financial services</h2>
+                            <span className="heading-subtitle wow fadeInUp animated animated">OUR TEAM</span>
+                            <h2 className="heading-title wow fadeInUp animated animated">Meet the Minds Behind the Mission</h2>
                         </div>
                     </div>
                 </div>

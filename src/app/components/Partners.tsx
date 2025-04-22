@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Partners() {
     return (
-        <section className="partner-one">
+        <section className="partner-one bg-light">
             <div className="container-fluid">
                 <div className="partner-slider-one">
                     <div className="partner-slider-one-item">

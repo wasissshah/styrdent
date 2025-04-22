@@ -2,18 +2,20 @@
 
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Geist, Geist_Mono, Wix_Madefor_Display, DM_Sans } from "next/font/google";
+import { Wix_Madefor_Display, DM_Sans, Montserrat, Play } from "next/font/google";
 import MainLayout from "./layouts/MainLayout";
-// import "./globals.css";
+import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const DMSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
+});
+
+const PlayFont = Play({
+  variable: "--font-play",
+  subsets: ["latin"],
+  weight: "400"
 });
 
 const wixMadeforDisplay = Wix_Madefor_Display({
@@ -21,14 +23,13 @@ const wixMadeforDisplay = Wix_Madefor_Display({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const MontserratFonts = Montserrat({
+  variable: "--font-montserrat"
 });
 
 export const metadata: Metadata = {
-  title: "Styrdent",
-  description: "Strydent is developing a fleet of next-generation AUVs",
+  title: "Strydent Autonomous Technologies",
+  description: "Redefining Underwater Defense with AI-Powered Swarming AUVs",
 };
 
 export default function RootLayout({
@@ -50,7 +51,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/styles/style.css" />
         <link rel="stylesheet" href="/styles/responsive.css" />
       </head>
-      <body className={`${wixMadeforDisplay.variable} ${DMSans.variable} custom-cursor`}>
+      <body className={`${wixMadeforDisplay.variable} ${DMSans.variable} ${PlayFont.variable} custom-cursor`}>
         {children}
         <Script src="/vendors/jquery/jquery-3.7.1.min.js" />
         <Script src="/vendors/bootstrap/js/bootstrap.bundle.min.js" />

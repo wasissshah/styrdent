@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -10,9 +11,9 @@ export default function Footer() {
                             <div className="row gutter-y-30">
                                 <div className="col-xl-3 col-lg-4 col-md-6 footer-about">
                                     <div className="footer-one-about">
-                                        <a href="#">
-                                            <Image src="/img/Footer_logo.svg" width="218" height="31" alt="footer-logo" />
-                                        </a>
+                                        <Link href="#">
+                                            <Image src="/img/logo.svg" width="218" height="31" alt="footer-logo" />
+                                        </Link>
                                     </div>
                                     <div className="footer-one-about-details">
                                         <p>Contact us loanlift and collaborate with us for making you Big dream business
@@ -21,52 +22,36 @@ export default function Footer() {
                                     <div className="footer-one-about-contact">
                                         <h4>Contact us</h4>
                                         <ul>
-                                            <li><a href="mailto:Loanlift@gmail.com"><i
-                                                className="flaticon-envelope"></i>help@company.com</a></li>
-                                            <li><a href="tel:+020.098.45611"><i className="flaticon-phone"></i>+1
+                                            <li><Link href="mailto:Loanlift@gmail.com"><i
+                                                className="flaticon-envelope"></i>help@company.com</Link></li>
+                                            <li><Link href="tel:+020.098.45611"><i className="flaticon-phone"></i>+1
                                                 20.098.456
-                                                11</a></li>
+                                                11</Link></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6">
                                     <div className="footer-one-link">
-                                        <h3>Services</h3>
+                                        <h3>Page</h3>
                                         <ul>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Personal
-                                                Loans</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Business
-                                                Loans</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Mortgage
-                                                Loans</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Emergency
-                                                Loans</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Student
-                                                Loans</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="service-details.html">Small
-                                                Business Loans</a></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/l">About
+                                                Us </Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">FAQS</Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link
+                                                href="/l">Careers </Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Apply
+                                                a Loan </Link>
+                                            </li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Contact
+                                                Us </Link>
+                                            </li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Meet The
+                                                Team </Link></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-xl-2 col-lg-4 col-md-6">
-                                    <div className="footer-one-link m-0">
-                                        <h3>Page</h3>
-                                        <ul>
-                                            <li><i className="flaticon-right-arrow"></i><a href="about.html">About
-                                                Us </a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="faq.html">FAQS</a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a
-                                                href="careers.html">Careers </a></li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="apply-loan.html">Apply
-                                                a Loan </a>
-                                            </li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="contact-us.html">Contact
-                                                Us </a>
-                                            </li>
-                                            <li><i className="flaticon-right-arrow"></i><a href="team.html">Meet The
-                                                Team </a></li>
-                                        </ul>
-                                    </div>
+
                                 </div>
                                 <div className="col-xl-4 col-md-6 ">
                                     <div className="footer-One-subscribe">
@@ -82,14 +67,14 @@ export default function Footer() {
                                         <div className="footer-one-social-media">
                                             <h4>Social Icons</h4>
                                             <ul>
-                                                <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                    className="fa-brands fa-facebook-f"></i></a></li>
-                                                <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                    className="fa-brands fa-instagram"></i></a></li>
-                                                <li><a href="https://in.linkedin.com/" target="_blank"><i
-                                                    className="fa-brands fa-linkedin-in"></i></a></li>
-                                                <li><a href="https://x.com/" target="_blank"><i
-                                                    className="fa-brands fa-twitter"></i></a></li>
+                                                <li><Link href="https://www.facebook.com/" target="_blank"><i
+                                                    className="fa-brands fa-facebook-f"></i></Link></li>
+                                                <li><Link href="https://www.instagram.com/" target="_blank"><i
+                                                    className="fa-brands fa-instagram"></i></Link></li>
+                                                <li><Link href="https://in.linkedin.com/" target="_blank"><i
+                                                    className="fa-brands fa-linkedin-in"></i></Link></li>
+                                                <li><Link href="https://x.com/" target="_blank"><i
+                                                    className="fa-brands fa-twitter"></i></Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -104,14 +89,14 @@ export default function Footer() {
                             <div className="row row-gap-3">
                                 <div className="col-md-6">
                                     <div className="footer-copy-right-one">
-                                        <p>© Copyright loanlift. All rights reserved</p>
+                                        <p>© Copyright STRYDENT. All rights reserved | Developed by <Link href="/">DESIGN SPARTANS</Link></p>
                                     </div>
                                 </div>
                                 <div className="col-md-6 text-center">
                                     <div className="footer-buttom-link text-end">
                                         <ul>
-                                            <li><a href="#">Terms & Condition</a></li>
-                                            <li><a href="#">Privacy policy</a></li>
+                                            <li><Link href="#">Terms & Condition</Link></li>
+                                            <li><Link href="#">Privacy policy</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -123,7 +108,7 @@ export default function Footer() {
 
             <div className="search-popup">
                 <button className="close-search "></button>
-                <form method="post" action="blog.html">
+                <form method="post" action="/">
                     <div className="form-group">
                         <input type="search" name="search" placeholder="Search Here" />
                             <button type="submit"><i className="flaticon-search"></i></button>
@@ -134,52 +119,52 @@ export default function Footer() {
             <div className="mobile-nav-wrapper">
                 <div className="mobile-nav-overlay mobile-nav-toggler"></div>
                 <div className="mobile-nav-content">
-                    <a href="#" className="mobile-nav-close mobile-nav-toggler">
+                    <Link href="#" className="mobile-nav-close mobile-nav-toggler">
                         <span></span>
                         <span></span>
-                    </a>
+                    </Link>
                     <div className="logo-box">
-                        <a href="index.html"><Image src="/img/logo.png" width="150" height="30" alt="logo" /></a>
+                        <Link href="/"><Image src="/img/logo.png" width="150" height="30" alt="logo" /></Link>
                     </div>
                     <div className="mobile-nav-container">
                         <ul className="mobile-menu-list">
-                            <li className="menu-item-has-children dropdown"><a href="#">Home</a>
+                            <li className="menu-item-has-children dropdown"><Link href="#">Home</Link>
                                 <ul>
-                                    <li><a href="index.html">Home-1</a></li>
-                                    <li><a href="index-2.html">Home-2</a></li>
-                                    <li><a href="index-3.html">Home-3</a></li>
+                                    <li><Link href="/">Home-1</Link></li>
+                                    <li><Link href="/">Home-2</Link></li>
+                                    <li><Link href="/">Home-3</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children dropdown"><a href="#">Services </a>
+                            <li className="menu-item-has-children dropdown"><Link href="#">Services </Link>
                                 <ul>
-                                    <li><a href="service.html">Services </a></li>
-                                    <li><a href="service-2.html">Services 2</a></li>
-                                    <li><a href="service-details.html">Services Details</a></li>
+                                    <li><Link href="/">Services </Link></li>
+                                    <li><Link href="/">Services 2</Link></li>
+                                    <li><Link href="/">Services Details</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children dropdown"><a href="#">Pages</a>
+                            <li className="menu-item-has-children dropdown"><Link href="#">Pages</Link>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="careers.html">Careers</a></li>
-                                    <li><a href="apply-loan.html">Apply a Loan</a></li>
-                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                    <li><a href="team.html">Meet The Team</a></li>
+                                    <li><Link href="/">About Us</Link></li>
+                                    <li><Link href="/">FAQ</Link></li>
+                                    <li><Link href="/">Careers</Link></li>
+                                    <li><Link href="/">Apply a Loan</Link></li>
+                                    <li><Link href="/">Contact Us</Link></li>
+                                    <li><Link href="/">Meet The Team</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children dropdown"><a href="#">Blog</a>
+                            <li className="menu-item-has-children dropdown"><Link href="#">Blog</Link>
                                 <ul>
-                                    <li><a href="blog.html">Blog Standards</a></li>
-                                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li><Link href="/">Blog Standards</Link></li>
+                                    <li><Link href="/">Blog Grid</Link></li>
+                                    <li><Link href="/">Blog Grid 2</Link></li>
+                                    <li><Link href="/">Blog Details</Link></li>
                                 </ul>
                             </li>
-                            <li className="menu-item-has-children dropdown"><a href="#">Portfolio</a>
+                            <li className="menu-item-has-children dropdown"><Link href="#">Portfolio</Link>
                                 <ul>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                                    <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                    <li><Link href="/">Portfolio</Link></li>
+                                    <li><Link href="/">Portfolio Grid</Link></li>
+                                    <li><Link href="/">Portfolio Details</Link></li>
                                 </ul>
                             </li>
                         </ul>
@@ -187,10 +172,10 @@ export default function Footer() {
                 </div>
             </div>
 
-            <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
+            <Link href="#" data-target="html" className="scroll-to-target scroll-to-top">
                 <span className="scroll-to-top-text">back top</span>
                 <span className="scroll-to-top-wrapper"><span className="scroll-to-top-inner"></span></span>
-            </a>
+            </Link>
         </div>
     );
 };

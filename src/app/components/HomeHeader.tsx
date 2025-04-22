@@ -42,8 +42,8 @@ const Header = () => {
                         <div className="topbar-one-right">
                             <ul className="topbar-one-right-one white-font">
                                 <li><Link href="#">Help</Link></li>
-                                <li><Link href="#">About</Link></li>
-                                <li><Link href="#">Content</Link></li>
+                                <li><Link href="/about-us">About</Link></li>
+                                <li><Link href="/faq">FAQs</Link></li>
                             </ul>
                             <ul className="topbar-one-social-media white-font">
                                 <li><Link href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></Link>
@@ -63,7 +63,7 @@ const Header = () => {
                     <nav className="main-menu">
                         <div className="main-menu-logo">
                             <Link href="/">
-                                <Image src="/img/Header_logo.svg" width="218" height="31" alt="header-logo" />
+                                <Image src="/img/logo.svg" width="218" height="31" alt="header-logo" />
                             </Link>
                         </div>
                         <div className="main-menu-inner">
@@ -72,16 +72,22 @@ const Header = () => {
                                     <Link href="/">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="/product-detail">Product</Link>
+                                    <Link href="/product-detail">Capabilities</Link>
                                 </li>
                                 <li>
-                                    <Link href="/about-us">About Us</Link>
+                                    <Link href="/product-detail">Technology</Link>
                                 </li>
                                 <li>
-                                    <Link href="/faq">FAQ</Link>
+                                    <Link href="/product-detail">Applications</Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact-us">Contact Us</Link>
+                                    <Link href="/product-detail">Team</Link>
+                                </li>
+                                <li>
+                                    <Link href="/product-detail">Roadmap</Link>
+                                </li>
+                                <li>
+                                    <Link href="/product-detail">Investors</Link>
                                 </li>
                             </ul>
                             <div className="header-right-end">
@@ -91,8 +97,7 @@ const Header = () => {
                             </div>
                             <div className="main-menu-right">
                                 <Link href="#" className="search-btn"><i className="flaticon-search-interface-symbol"></i></Link>
-                                <Link href="/contact-us" className="btn btn-primary">Get Started <i
-                                    className="flaticon-next"></i></Link>
+                                <Link href="/contact-us" className="btn btn-primary">Contact Us <i className="flaticon-next"></i></Link>
                             </div>
                         </div>
                     </nav>
