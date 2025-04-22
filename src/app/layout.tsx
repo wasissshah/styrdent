@@ -2,8 +2,8 @@
 
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Wix_Madefor_Display, DM_Sans, Montserrat, Play } from "next/font/google";
-import MainLayout from "./layouts/MainLayout";
+import { Wix_Madefor_Display, DM_Sans, Play } from "next/font/google";
+//import MainLayout from "./layouts/MainLayout";
 import "./globals.css";
 
 
@@ -21,10 +21,6 @@ const PlayFont = Play({
 const wixMadeforDisplay = Wix_Madefor_Display({
   variable: "--font-wix-madefor-display",
   subsets: ["latin"],
-});
-
-const MontserratFonts = Montserrat({
-  variable: "--font-montserrat"
 });
 
 export const metadata: Metadata = {
