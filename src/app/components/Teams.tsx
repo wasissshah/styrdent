@@ -12,7 +12,7 @@ export default function Teams() {
                         </div>
                     </div>
                 </div>
-                <div className="row gutter-y-30">
+                <div className="row gutter-y-30 justify-content-center">
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
@@ -20,21 +20,8 @@ export default function Teams() {
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
-                                    <h5>Joan Johnson</h5>
-                                    <p>Chief Financial Officer</p>
-                                    <div className="team-one-social-media">
-                                        <ul>
-                                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                className="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="https://in.linkedin.com/" target="_blank"><i
-                                                className="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="https://x.com/" target="_blank"><i
-                                                className="fa-brands fa-twitter"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h5>Dean L. Fanelli</h5>
+                                    <p>Ph.D, J.D</p>
                                 </div>
                             </div>
                         </div>
@@ -42,25 +29,12 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-2.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-5.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
-                                    <h5>Donnie Southern</h5>
-                                    <p>Head Of Operation</p>
-                                    <div className="team-one-social-media">
-                                        <ul>
-                                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                className="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="https://in.linkedin.com/" target="_blank"><i
-                                                className="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="https://x.com/" target="_blank"><i
-                                                className="fa-brands fa-twitter"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h5>Johne Shire</h5>
+                                    <p>J.D</p>
                                 </div>
                             </div>
                         </div>
@@ -72,21 +46,8 @@ export default function Teams() {
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
-                                    <h5>Alexandra Southern</h5>
-                                    <p>Branch Manager</p>
-                                    <div className="team-one-social-media">
-                                        <ul>
-                                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                className="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="https://in.linkedin.com/" target="_blank"><i
-                                                className="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="https://x.com/" target="_blank"><i
-                                                className="fa-brands fa-twitter"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h5>William Poster</h5>
+                                    <p>Former Chairman</p>
                                 </div>
                             </div>
                         </div>
@@ -94,25 +55,51 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-4.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-7.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
-                                    <h5>Alexandra Southern</h5>
-                                    <p>Regional Manager</p>
-                                    <div className="team-one-social-media">
-                                        <ul>
-                                            <li><a href="https://www.facebook.com/" target="_blank"><i
-                                                className="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="https://www.instagram.com/" target="_blank"><i
-                                                className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="https://in.linkedin.com/" target="_blank"><i
-                                                className="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="https://x.com/" target="_blank"><i
-                                                className="fa-brands fa-twitter"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h5>Mike Smith</h5>
+                                    <p>President & CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="team-one-box">
+                            <a href="team-details.html" className="team-one-image">
+                                <Image src="/img/team/team-8.jpg" width="306" height="435" alt="team-image" />
+                            </a>
+                            <div className="team-one-details">
+                                <div className="team-one-details-inner">
+                                    <h5>Micheal Golda</h5>
+                                    <p>Ph.D.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="team-one-box">
+                            <a href="team-details.html" className="team-one-image">
+                                <Image src="/img/team/team-9.jpg" width="306" height="435" alt="team-image" />
+                            </a>
+                            <div className="team-one-details">
+                                <div className="team-one-details-inner">
+                                    <h5>Frank Gerace</h5>
+                                    <p>Former Division Quality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 col-sm-12">
+                        <div className="team-one-box">
+                            <a href="team-details.html" className="team-one-image">
+                                <Image src="/img/team/team-10.jpg" width="306" height="435" alt="team-image" />
+                            </a>
+                            <div className="team-one-details">
+                                <div className="team-one-details-inner">
+                                    <h5>Micheal Gilday</h5>
+                                    <p>Former Chief of Naval</p>
                                 </div>
                             </div>
                         </div>

@@ -25,9 +25,10 @@ export default function Hero() {
                                 <div className="col-xl-8 col-lg-8 col-md-10">
                                     <div className="banner-one-info">
                                         <div className="banner-title fade-left">
-                                            <h1>Strydent Autonomous Technologies</h1>
+                                            <h6 className="font-play m-0 text-primary mb-3">Autonomous Underwater Vehicles</h6>
+                                            <h1 className="">Strydent Autonomous Technologies</h1>
                                         </div>
-                                        <div className="section-details fade-left">
+                                        <div className="section-details fade-left d-none">
                                             <p>Strydent is developing the next generation of Autonomous Underwater Vehicles (AUVs) — a powerful AI-driven fleet engineered to safeguard America’s extended continental shelf, ports, offshore platforms, and vital sea assets.</p>
                                         </div>
                                         <div className="fade-in-up">
@@ -38,7 +39,7 @@ export default function Hero() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="banner-one-box">
+                                <div className="banner-one-box d-nones">
                                     <p className="h3 mb-3">Strategic partners and investors welcome.</p>
                                     <Link href="#" className="text-decoration-underline text-white">Contact Us</Link>
                                 </div>

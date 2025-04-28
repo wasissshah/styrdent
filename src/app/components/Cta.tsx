@@ -8,9 +8,9 @@ export default function CTA() {
                     <div className="col-xl-8 col-md-9 col-sm-9 col-9">
                         <div className="cta-title">
                             <h2>Mission-Ready for Strategic Impact</h2>
-                            <h3>Built for U.S. military defense, offshore platform protection, mine detection,
+                            <p>Built for U.S. military defense, offshore platform protection, mine detection,
                                 and real-time reconnaissance missions. Fleet units act as a coordinated barrier for national
-                                asset protection.</h3>
+                                asset protection.</p>
                         </div>
                         <a href="contact-us.html" className="btn btn-primary v2">Contact us <i className="flaticon-next"></i></a>
                     </div>

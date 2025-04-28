@@ -23,7 +23,7 @@ export default function PageBanner({
         >
             <div className="container">
                 <div className="hero-heading-title">
-                    <h2>{title}</h2>
+                    <h1 className="text-white">{title}</h1>
                 </div>
                 <ul className="bradcrumb">
                     {breadcrumb.map((item, index) => (

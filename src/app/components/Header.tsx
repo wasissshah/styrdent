@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-8">
-                            <p>Welcome to Loan lift Your Trusted Financial partner</p>
+                            <p>Strydent Autonomous Technologies</p>
                         </div>
                         <div className="col-4">
                             <ul className="topbar-three-social-media">
@@ -56,16 +56,13 @@ const Header = () => {
                                     <Link href="/">Home</Link>
                                 </li>
                                 <li>
-                                    <Link href="/product-detail">Capabilities</Link>
+                                    <Link href="/capabilities">Capabilities</Link>
                                 </li>
                                 <li>
-                                    <Link href="/about-us">About Us</Link>
+                                    <Link href="/product-detail">Technology</Link>
                                 </li>
                                 <li>
-                                    <Link href="/faq">FAQ</Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact-us">Contact Us</Link>
+                                    <Link href="/product-detail">Team</Link>
                                 </li>
                             </ul>
                             <div className="header-right-end">
@@ -75,7 +72,6 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="main-menu-right">
-                            <Link href="#" className="search-btn"><i className="flaticon-search-interface-symbol"></i></Link>
                             <Link href="tel:+020.098.45611" className="menu-phone"> <i className="flaticon-phone"></i>+020.098.456
                                 11</Link>
                         </div>

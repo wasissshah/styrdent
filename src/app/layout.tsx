@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Wix_Madefor_Display, DM_Sans, Play } from "next/font/google";
 //import MainLayout from "./layouts/MainLayout";
-import "./globals.css";
+// import "./globals.css";
 
 
 const DMSans = DM_Sans({
@@ -46,6 +46,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/vendors/youtube-popup/youtube-popup.css" />
         <link rel="stylesheet" href="/styles/style.css" />
         <link rel="stylesheet" href="/styles/responsive.css" />
+        <link rel="stylesheet" href="/styles/globals.css" />
       </head>
       <body className={`${wixMadeforDisplay.variable} ${DMSans.variable} ${PlayFont.variable} custom-cursor`}>
         {children}

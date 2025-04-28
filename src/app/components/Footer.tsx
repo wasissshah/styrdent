@@ -34,19 +34,11 @@ export default function Footer() {
                                     <div className="footer-one-link">
                                         <h3>Page</h3>
                                         <ul>
-                                            <li><i className="flaticon-right-arrow"></i><Link href="/l">About
-                                                Us </Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/l">Home</Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">About</Link></li>
                                             <li><i className="flaticon-right-arrow"></i><Link href="/">FAQS</Link></li>
-                                            <li><i className="flaticon-right-arrow"></i><Link
-                                                href="/l">Careers </Link></li>
-                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Apply
-                                                a Loan </Link>
-                                            </li>
-                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Contact
-                                                Us </Link>
-                                            </li>
-                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Meet The
-                                                Team </Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Contact Us </Link></li>
+                                            <li><i className="flaticon-right-arrow"></i><Link href="/">Team</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -106,16 +98,6 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <div className="search-popup">
-                <button className="close-search "></button>
-                <form method="post" action="/">
-                    <div className="form-group">
-                        <input type="search" name="search" placeholder="Search Here" />
-                            <button type="submit"><i className="flaticon-search"></i></button>
-                    </div>
-                </form>
-            </div>
-
             <div className="mobile-nav-wrapper">
                 <div className="mobile-nav-overlay mobile-nav-toggler"></div>
                 <div className="mobile-nav-content">
@@ -124,49 +106,14 @@ export default function Footer() {
                         <span></span>
                     </Link>
                     <div className="logo-box">
-                        <Link href="/"><Image src="/img/logo.png" width="150" height="30" alt="logo" /></Link>
+                        <Link href="/"><Image src="/img/logo.svg" width="150" height="30" alt="logo" /></Link>
                     </div>
                     <div className="mobile-nav-container">
                         <ul className="mobile-menu-list">
-                            <li className="menu-item-has-children dropdown"><Link href="#">Home</Link>
-                                <ul>
-                                    <li><Link href="/">Home-1</Link></li>
-                                    <li><Link href="/">Home-2</Link></li>
-                                    <li><Link href="/">Home-3</Link></li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children dropdown"><Link href="#">Services </Link>
-                                <ul>
-                                    <li><Link href="/">Services </Link></li>
-                                    <li><Link href="/">Services 2</Link></li>
-                                    <li><Link href="/">Services Details</Link></li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children dropdown"><Link href="#">Pages</Link>
-                                <ul>
-                                    <li><Link href="/">About Us</Link></li>
-                                    <li><Link href="/">FAQ</Link></li>
-                                    <li><Link href="/">Careers</Link></li>
-                                    <li><Link href="/">Apply a Loan</Link></li>
-                                    <li><Link href="/">Contact Us</Link></li>
-                                    <li><Link href="/">Meet The Team</Link></li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children dropdown"><Link href="#">Blog</Link>
-                                <ul>
-                                    <li><Link href="/">Blog Standards</Link></li>
-                                    <li><Link href="/">Blog Grid</Link></li>
-                                    <li><Link href="/">Blog Grid 2</Link></li>
-                                    <li><Link href="/">Blog Details</Link></li>
-                                </ul>
-                            </li>
-                            <li className="menu-item-has-children dropdown"><Link href="#">Portfolio</Link>
-                                <ul>
-                                    <li><Link href="/">Portfolio</Link></li>
-                                    <li><Link href="/">Portfolio Grid</Link></li>
-                                    <li><Link href="/">Portfolio Details</Link></li>
-                                </ul>
-                            </li>
+                            <li className="menu-item-has-children"><Link href="#">Home</Link></li>
+                            <li className="menu-item-has-children"><Link href="#">Capabilities</Link></li>
+                            <li className="menu-item-has-children"><Link href="#">Technology</Link></li>
+                            <li className="menu-item-has-children"><Link href="#">Team</Link></li>
                         </ul>
                     </div>
                 </div>

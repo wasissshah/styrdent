@@ -9,6 +9,7 @@
   font-family: "Play", sans-serif !important;
   text-transform: uppercase;
 }
+
 .btn.v2 {
   color: var(--black);
   background: var(--primary);
@@ -18,14 +19,27 @@
 .bg-primary-v2 {
   background: var(--primary) !important;
 }
+
 .bg-dark-v2 {
   background: var(--primary-dark) !important;
+}
+
+.font-play {
+  font-family: Play, sans-serif !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
 }
 
 .about-four {
   position: relative;
   display: flex;
   align-items: end;
+}
+.about-four .container {
+  position: relative;
+  z-index: 2;
 }
 .about-four .background {
   position: absolute;
@@ -44,7 +58,5 @@
   height: 100%;
   z-index: 1;
 }
-.about-four .container {
-  position: relative;
-  z-index: 2;
-}
+
+/*# sourceMappingURL=globals.css.map */

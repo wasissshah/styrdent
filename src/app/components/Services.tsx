@@ -4,48 +4,42 @@ const services = [
         title: "Fleet-Based Swarm Intelligence",
         description: "AUVs operate as a coordinated swarm to create real-time virtual defense perimeters.",
         image: "/img/services/services-1.png",
-        iconClass: "flaticon-personal",
+        iconClass: "/img/swarm-intelligence.svg",
     },
     {
         title: "Generative AI Navigation",
         description: "Autonomous decision-making powered by real-time data from multi-sensor inputs.",
-        image: "/img/services/services-2.png",
-        iconClass: "flaticon-money-bag-1",
+        image: "/img/services/services-4.png",
+        iconClass: "/img/ai.svg",
     },
     {
         title: "Solar-Powered Endurance",
         description: "Wing-mounted solar panels recharge the Li-ion battery, enabling continuous missions.",
-        image: "/img/services/services-3.png",
-        iconClass: "flaticon-money-bag",
+        image: "/img/services/services-4.png",
+        iconClass: "/img/solar.svg",
     },
     {
         title: "Encrypted Data Transmission",
         description: "Blockchain-backed systems ensure secure communication and mission integrity.",
         image: "/img/services/services-4.png",
-        iconClass: "flaticon-mortarboard",
+        iconClass: "/img/data.svg",
     },
     {
         title: "Modular Sensor Architecture",
         description: "Easily integrates sonar, LiDAR, chemical, thermal, and electromagnetic sensors.",
         image: "/img/services/services-5.png",
-        iconClass: "flaticon-mortgage-loan",
+        iconClass: "/img/sensors.svg",
     },
     {
         title: "Mission Flexibility",
         description: "From reconnaissance to mine detection, AUVs adapt to a wide range of naval tasks.",
         image: "/img/services/services-6.png",
-        iconClass: "flaticon-loan-1",
+        iconClass: "/img/mission.svg",
     },
 ];
 export default function Services() {
     return (
         <section className="services-section-one">
-            <div className="service-one-shape-1">
-                <Image src="/img/shape/service-shape-1.png" width="120" height="120" alt="shape" />
-            </div>
-            <div className="service-one-shape-2">
-                <Image src="/img/shape/service-shape-2.png" width="121" height="127" alt="shape" />
-            </div>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 m-auto">
@@ -62,7 +56,7 @@ export default function Services() {
                                 <Image src={service.image} width={60} height={60} alt="service images" />
                             </div>
                             <div className="service-one-icon-box">
-                                <i className={service.iconClass}></i>
+                                <Image src={service.iconClass} width={60} height={60} alt="service images" />
                             </div>
                             <div className="service-one-info">
                                 <h4>{service.title}</h4>
