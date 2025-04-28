@@ -116,7 +116,7 @@ export default function Home() {
                 </div>
                 <div className="tab-content" id="services-tab-content">
                     <div className="tab-pane fade show active" id="personal-tab-pane" role="tabpanel"
-                         aria-labelledby="personal-tab" tabIndex="0">
+                         aria-labelledby="personal-tab">
                         <div className="container">
                             <div className="row align-items-start align-items-xl-center gutter-y-30">
                                 <div className="col-lg-4">
@@ -140,7 +140,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="tab-pane fade" id="mortgage-tab-pane" role="tabpanel" aria-labelledby="mortgage-tab"
-                         tabIndex="0">
+                    >
                         <div className="container">
                             <div className="row align-items-start align-items-xl-center gutter-y-30">
                                 <div className="col-lg-4">
@@ -164,7 +164,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="tab-pane fade" id="emergency-tab-pane" role="tabpanel"
-                         aria-labelledby="emergency-tab" tabIndex="0">
+                         aria-labelledby="emergency-tab">
                         <div className="container">
                             <div className="row align-items-start align-items-xl-center gutter-y-30">
                                 <div className="col-lg-4">
@@ -188,7 +188,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="tab-pane fade" id="business-tab-pane" role="tabpanel" aria-labelledby="business-tab"
-                         tabIndex="0">
+                         >
                         <div className="container">
                             <div className="row align-items-start align-items-xl-center gutter-y-30">
                                 <div className="col-lg-4">
