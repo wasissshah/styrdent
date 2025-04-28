@@ -22,6 +22,7 @@ export default function AboutUs() {
         <MainLayout>
             <PageBanner
                 title="Capabilities"
+                backgroundImage=""
                 breadcrumb={[
                     { label: "Home", href: "/" },
                     { label: "Capabilities", href: "#" },
