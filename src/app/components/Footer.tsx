@@ -50,12 +50,12 @@ export default function Footer() {
                                         <h3>Subscribe</h3>
                                         <p>Stay up-to-date with the latest trends in digital marketing and receive
                                             exclusive tips and insights by subscribing to our newsletter.</p>
-                                        <form className="footer-One-subscribe-form" action="#">
-                                            <input type="email" name="email" placeholder="Your Email Address"/>
-                                                <button type="submit" className="btn btn-primary btn-small">Subscribe
-                                                    <i className="flaticon-next"></i>
-                                                </button>
-                                        </form>
+                                        {/*<form className="footer-One-subscribe-form" action="#">*/}
+                                        {/*    <input type="email" name="email" placeholder="Your Email Address"/>*/}
+                                        {/*        <button type="submit" className="btn btn-primary btn-small">Subscribe*/}
+                                        {/*            <i className="flaticon-next"></i>*/}
+                                        {/*        </button>*/}
+                                        {/*</form>*/}
                                         <div className="footer-one-social-media">
                                             <h4>Social Icons</h4>
                                             <ul>

@@ -7,20 +7,20 @@ const Header = () => {
             <div className="custom-cursor-one">
                 <div className="custom-cursor-inner"></div>
             </div>
-            {/*<div className="preloader">*/}
-            {/*    <div className="loading-container">*/}
-            {/*        <div className="loading-text">*/}
-            {/*            <span>L</span>*/}
-            {/*            <span>O</span>*/}
-            {/*            <span>A</span>*/}
-            {/*            <span>N</span>*/}
-            {/*            <span>L</span>*/}
-            {/*            <span>I</span>*/}
-            {/*            <span>F</span>*/}
-            {/*            <span>T</span>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div className="preloader">
+                <div className="loading-container">
+                    <div className="loading-text">
+                        <span>S</span>
+                        <span>T</span>
+                        <span>R</span>
+                        <span>Y</span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>N</span>
+                        <span>T</span>
+                    </div>
+                </div>
+            </div>
 
             <div className="topbar-three">
                 <div className="container">
