@@ -156,6 +156,35 @@
   margin-bottom: 30px;
 }
 
+#team-slider {
+  position: relative;
+}
+#team-slider button.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 999;
+  background: none;
+  color: var(--primary-dark);
+  font-size: 24px;
+  line-height: 0;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid #fff;
+}
+#team-slider button.slick-prev.slick-arrow {
+  left: 90px;
+}
+#team-slider button.slick-next.slick-arrow {
+  left: auto;
+  right: 0;
+  transform: rotate(180deg);
+}
+
 ul#services-tab .nav-link span {
   line-height: 35px;
 }

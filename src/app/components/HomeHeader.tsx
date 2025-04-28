@@ -78,7 +78,7 @@ const Header = () => {
                                     <Link href="/product-detail">Technology</Link>
                                 </li>
                                 <li>
-                                    <Link href="/product-detail">Team</Link>
+                                    <Link href="/team">Team</Link>
                                 </li>
                             </ul>
                             <div className="header-right-end">

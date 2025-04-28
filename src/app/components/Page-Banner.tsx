@@ -18,12 +18,12 @@ export default function PageBanner({
     }: PageBannerProps) {
     return (
         <div
-            className="inner-page-hero"
+            className="inner-page-hero bg-dark-v2"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="container">
                 <div className="hero-heading-title">
-                    <h1 className="text-white">{title}</h1>
+                    <h1 className="text-white display-1 fw-bold">{title}</h1>
                 </div>
                 <ul className="bradcrumb">
                     {breadcrumb.map((item, index) => (

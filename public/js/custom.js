@@ -93,6 +93,40 @@
             slidesToScroll: 1
         })
     }
+    if ($('#team-slider').length) {
+        $('#team-slider').slick({
+            speed: 500,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        })
+    }
     if ($('.banner-two').length) {
         const $slider = $('.banner-two-slider');
         // banner-one slider

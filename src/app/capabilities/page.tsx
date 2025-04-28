@@ -22,7 +22,6 @@ export default function AboutUs() {
         <MainLayout>
             <PageBanner
                 title="Capabilities"
-                backgroundImage="/img/background/about-hero-bg.jpg"
                 breadcrumb={[
                     { label: "Home", href: "/" },
                     { label: "Capabilities", href: "#" },

@@ -1,18 +1,29 @@
+"use client";
+
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import HomeHeader from "./HomeHeader";
+import Header from "./Header";
 
 export default function Teams() {
+    const pathname = usePathname();
+    const isHome = pathname === "/";
+
+
     return (
         <section className="team-one bg-white">
             <div className="container">
-                <div className="row">
+                {isHome ?
+                <div className="row mb-4">
                     <div className="col-lg-8 col-md-12 m-auto">
                         <div className="heading-box text-center">
                             <span className="heading-subtitle wow fadeInUp animated animated">OUR TEAM</span>
                             <h2 className="heading-title wow fadeInUp animated animated">Meet the Minds Behind the Mission</h2>
                         </div>
                     </div>
-                </div>
-                <div className="row gutter-y-30 justify-content-center">
+                </div> : ''
+                }
+                <div className="row gutter-y-30 justify-content-center" id="team-sliderd">
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
@@ -29,7 +40,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-5.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-3.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
@@ -42,7 +53,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-3.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-1.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
@@ -55,7 +66,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-7.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-3.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
@@ -68,7 +79,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-8.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-1.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
@@ -81,7 +92,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-9.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-3.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
@@ -94,7 +105,7 @@ export default function Teams() {
                     <div className="col-lg-3 col-md-6 col-sm-12">
                         <div className="team-one-box">
                             <a href="team-details.html" className="team-one-image">
-                                <Image src="/img/team/team-10.jpg" width="306" height="435" alt="team-image" />
+                                <Image src="/img/team/team-1.jpg" width="306" height="435" alt="team-image" />
                             </a>
                             <div className="team-one-details">
                                 <div className="team-one-details-inner">
