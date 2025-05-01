@@ -88,6 +88,14 @@ section {
   background-color: var(--white);
 }
 
+.main-header .main-menu-logo {
+  opacity: 0;
+}
+
+.main-header.sticky-fixed .main-menu-logo {
+  opacity: 1;
+}
+
 .main-header-four.sticky-fixed .main-menu-logo img {
   filter: invert(1) !important;
 }
@@ -359,19 +367,174 @@ ul#services-tab .nav-link span {
   font-family: "Montserrat", sans-serif !important;
 }
 
+@media (max-width: 1600px) {
+  .fs-180 {
+    font-size: 90px !important;
+  }
+  h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .btn-primary {
+    font-size: 14px;
+  }
+  .banner-one .logo-lg,
+  .banner-two .logo-lg {
+    top: 40px;
+    width: 350px;
+  }
+  .services-section-one {
+    padding: 80px 0;
+  }
+  .services-section-one .object {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+  .services-section-one .service-one-box {
+    padding: 20px;
+  }
+  .services-section-one .service-one-box img {
+    width: 40px;
+  }
+  .about-four h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .team {
+    padding-top: 200px;
+  }
+  .cta-one {
+    padding: 40px 0;
+  }
+  .cta-one .cta-title h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .footer-one .footer-one-link a {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
 @media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .main-menu-logo {
+    max-width: 190px;
+  }
+  .main-header .main-menu-logo {
+    opacity: 1;
+    padding: 10px;
+  }
+  .header-right-end {
+    width: 50px;
+    height: 50px;
+  }
+  .header-right-end span {
+    width: 26px;
+    height: 3px;
+  }
+  .header-right-end span:first-child {
+    margin-top: -5px;
+  }
+  .header-right-end span:last-child {
+    margin-top: 5px;
+  }
+  .banner-one .logo-lg,
+  .banner-two .logo-lg {
+    display: none;
+  }
+  .banner-one p,
+  .banner-two p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   .banner-two-info {
-    padding: 200px 0 100px 0;
+    padding: 30px 0 100px 0;
   }
   .banner-two-info h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .banner-two-info .small {
+    font-size: 22px;
+  }
+  .banner-two-info p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .banner-two-info p.letter-spacing {
+    letter-spacing: 0.2em;
+    font-size: 12px;
   }
   .capabilities-section .capabilities-card .option {
     border-right: none;
   }
   .capabilities-section .capabilities-card .dot {
     margin-bottom: 20px;
+  }
+  .mobile-nav-wrapper .mobile-menu-list a {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .features-slider-two .slick-track {
+    padding: 20px 0;
+  }
+  .features-slider-two .features-two-slider-item h3 {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  .heading-subtitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .services-section-one .service-one-box img {
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .services-section-one .service-one-box h5 {
+    font-size: 16px;
+  }
+  .about-four h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .services-two-inner-bg {
+    padding-top: 60px;
+  }
+  .services-two {
+    padding-bottom: 40px;
+  }
+  ul#services-tab .nav-link span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .cta-two-box-one {
+    margin-bottom: 10px;
+  }
+  .team .section-details {
+    display: none;
+  }
+  .footer-one .footer-one-about {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-one .footer-one-about-details {
+    display: none;
+  }
+  .footer-one .footer-one-link {
+    padding-left: 0;
+    margin-bottom: 20px !important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .header-right-end {
+    margin-right: 0;
   }
 }
 

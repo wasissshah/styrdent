@@ -62,7 +62,7 @@ const HeaderV2 = () => {
             <header className="main-header">
                 <div className="container-fluid px-0">
                     <nav className="main-menu">
-                        <div className="main-menu-logo opacity-0">
+                        <div className="main-menu-logo">
                             <Link href="/">
                                 <Image src="/img/logo.svg" width="218" height="31" alt="header-logo" />
                             </Link>

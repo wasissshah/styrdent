@@ -43,8 +43,8 @@ export default function Services() {
         <section className="services-section-one">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 offset-lg-3 mb-5">
-                        <Image src="/img/object.svg" className="img-fluid" width="782" height="345" alt="object" />
+                    <div className="col-lg-6 offset-lg-3 mb-2 mb-lg-5">
+                        <Image src="/img/object.svg" className="img-fluid object" width="782" height="345" alt="object" />
                     </div>
                 </div>
                 <div className="row">
