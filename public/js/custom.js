@@ -725,7 +725,7 @@
     }
 
     if ($('.heading-title').length) {
-        const headings = document.querySelectorAll('.heading-title');
+        const headings = document.querySelectorAll('.heading-title.animated');
         const observerOptions = {
             root: null,
             threshold: 0.1

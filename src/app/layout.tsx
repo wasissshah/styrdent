@@ -2,10 +2,15 @@
 
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Wix_Madefor_Display, DM_Sans, Play } from "next/font/google";
+import { DM_Sans, Play, Montserrat } from "next/font/google";
 //import MainLayout from "./layouts/MainLayout";
 // import "./globals.css";
 
+
+const MontserratFont = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"]
+});
 
 const DMSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -16,11 +21,6 @@ const PlayFont = Play({
   variable: "--font-play",
   subsets: ["latin"],
   weight: "400"
-});
-
-const wixMadeforDisplay = Wix_Madefor_Display({
-  variable: "--font-wix-madefor-display",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -48,7 +48,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="/styles/responsive.css" />
         <link rel="stylesheet" href="/styles/globals.css" />
       </head>
-      <body className={`${wixMadeforDisplay.variable} ${DMSans.variable} ${PlayFont.variable} custom-cursor`}>
+      <body className={`${MontserratFont.variable} ${DMSans.variable} ${PlayFont.variable} custom-cursor`}>
         {children}
         <Script src="/vendors/jquery/jquery-3.7.1.min.js" />
         <Script src="/vendors/bootstrap/js/bootstrap.bundle.min.js" />

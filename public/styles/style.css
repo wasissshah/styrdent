@@ -223,19 +223,25 @@ button:focus-visible {
 /***********************
 * Button style 
 ***********************/
-
+.btn {
+    font-family: 'Play', sans-serif !important;
+    font-weight: 700;
+}
 .btn-primary {
+    min-width: 200px;
+    text-align: center;
     background: transparent;
     column-gap: 10px;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     position: relative;
     font-size: 16px;
     overflow: hidden;
-    border: 1px solid var(--loanlift-text-light);
+    border: none;
     line-height: 30px;
     padding: 8px 30px;
-    border-radius: 30px;
+    border-radius: 4px;
     transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
@@ -337,19 +343,19 @@ button:focus-visible {
 .btn-primary::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: -180px;
+    right: -330px;
     background-color: var(--loanlift-text-light);
-    color: var(--loanlift-text-black);
+    color: var(--white);
     z-index: -1;
-    height: 140px;
-    width: 230px;
-    transform: translate(-167px, -110px) rotate(-34deg);
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
+    height: 300px;
+    width: 300px;
+    transform: rotate(-40deg);
+    transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -webkit-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
 }
 
 .btn-secondary::after {
@@ -425,9 +431,9 @@ button:focus-visible {
 }
 
 .btn-primary:hover {
-    background-color: transparent;
+    background-color: var(--primary-dark);
     border-color: transparent;
-    color: var(--loanlift-text-black);
+    color: var(--primary-dark);
 }
 
 .btn-secondary:hover {
@@ -478,7 +484,7 @@ button:focus-visible {
 .btn-outline-secondary:hover::after,
 .btn-outline-primary:hover::after,
 .btn-light:hover::after {
-    transform: translate(-0px, -60px) rotate(-34deg);
+    right: -90px;
 }
 
 .btn-small {
@@ -640,8 +646,8 @@ ul.topbar-one-info li a {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
-    border-bottom: 1px solid #fff3;
+    z-index: 5;
+    /*border-bottom: 1px solid #fff3;*/
 }
 
 nav.main-menu {
@@ -659,7 +665,7 @@ nav.main-menu {
 .main-menu-inner {
     display: flex;
     width: 100%;
-    padding-top: 50px;
+    padding: 0;
 }
 
 ul.main-menu-list {
@@ -763,6 +769,7 @@ ul.main-menu-list li ul li:hover a::after {
     height: 144px;
     width: 1px;
     background-color: #fff3;
+    display: none;
 }
 
 .search-filed.search-active {
@@ -777,43 +784,44 @@ ul.main-menu-list li ul li:hover a::after {
 
 .header-right-end {
     position: relative;
-    width: 28px;
-    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
     margin-left: auto;
     cursor: pointer;
-    margin-right: 30px;
-    display: none;
+    background-color: var(--primary-dark);
+    /*display: none;*/
 }
 
-.header-right-end span:nth-child(1) {
+.header-right-end span {
     position: absolute;
-    width: 20px;
-    height: 3px;
-    background-color: var(--loanlift-text-light);
+    width: 56px;
+    height: 4px;
+    background-color: var(--primary);
     border-radius: 10px;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-right-end span:first-child {
+    margin-top: -7px;
+}
+.header-right-end span:last-child {
+    margin-top: 7px;
 }
 
-.header-right-end span:nth-child(2) {
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    background-color: var(--loanlift-text-light);
-    border-radius: 10px;
-    right: 0;
-    bottom: 9px;
-}
+/*.header-right-end span:last-child {*/
+/*    position: absolute;*/
+/*    width: 56px;*/
+/*    height: 4px;*/
+/*    background-color: var(--loanlift-text-light);*/
+/*    border-radius: 10px;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*}*/
 
-.header-right-end span:nth-child(3) {
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    background-color: var(--loanlift-text-light);
-    border-radius: 10px;
-    left: 0;
-    bottom: 0;
-}
 
 .sticky-header--cloned.sticky-fixed .main-menu-inner {
     padding-top: 0;
@@ -1321,14 +1329,14 @@ ul.topbar-three-social-media li a:hover {
 
 .mobile-nav-content {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
     overflow-y: auto;
     height: 100%;
-    background-color: var(--loanlift-text-black);
+    background-color: var(--primary-dark);
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding: 30px 15px;
@@ -1721,7 +1729,7 @@ ul.mobile-menu-list .dropdown ul li a {
 }
 
 .banner-two-info {
-    padding: 200px 0 100px 0;
+    padding: 180px 0;
 }
 
 .banner-two-info p {
@@ -1729,16 +1737,19 @@ ul.mobile-menu-list .dropdown ul li a {
     line-height: 35px;
     margin-bottom: 8px;
     color: var(--loanlift-text-light);
+}
+.banner-two-info p.letter-spacing {
     letter-spacing: 0.30em;
 }
 
 .banner-two-info h1 {
-    font-size: 65px;
-    line-height: 90px;
-    letter-spacing: -0.03em;
+    font-size: 60px;
+    line-height: 70px;
     font-weight: 700;
     color: var(--loanlift-text-light);
-    margin-bottom: 40px;
+}
+.banner-two-info .small {
+    font-size: 50px;
 }
 
 .banner-two-slider-item-image {
@@ -2029,7 +2040,7 @@ span.dot-text {
     padding: 4px 20px;
     display: inline-block;
     font-family: var(--loanlift-body-font);
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.30em;
     margin-bottom: 18px;
@@ -2097,6 +2108,7 @@ span.dot-text {
 }
 
 .service-one-box:hover .service-one-info h4,
+.service-one-box:hover .service-one-info h5,
 .service-one-box:hover .service-one-info p,
 .service-one-box:hover a,
 .service-one-box:hover .service-one-icon-box {
@@ -2217,7 +2229,6 @@ ul#services-tab .nav-link {
 
 ul#services-tab .nav-link span {
     margin-bottom: 0;
-    font-family: 'Wix Madefor Display';
     font-weight: 600;
     font-size: 22px;
     line-height: 35px;
@@ -2620,14 +2631,9 @@ ul.features-one-list li::after {
 ***********************/
 
 .features-two {
-    overflow: hidden;
-    padding: 30px 0;
+    transform: scale(-1);
 }
 
-.features-slider-two {
-    transform: rotate(178deg);
-    padding: 49px 0;
-}
 
 .features-two-slider-item {
     padding-right: 37px;

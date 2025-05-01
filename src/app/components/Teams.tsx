@@ -17,7 +17,7 @@ export default function Teams() {
                 <div className="row mb-4">
                     <div className="col-lg-8 col-md-12 m-auto">
                         <div className="heading-box text-center">
-                            <span className="heading-subtitle wow fadeInUp animated animated">OUR TEAM</span>
+                            <span className="heading-subtitle wow fadeInUp animated animated border-0">OUR TEAM</span>
                             <h2 className="heading-title wow fadeInUp animated animated">Meet the Minds Behind the Mission</h2>
                         </div>
                     </div>

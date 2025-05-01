@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Header from "./../components/Header";
-import HomeHeader from "./../components/HomeHeader";
+import HomeHeader from "./../components/HomeHeaderV2";
 import Footer from "./../components/Footer";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {

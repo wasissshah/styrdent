@@ -22,18 +22,6 @@ export default function ContactForm() {
                                     <input type="email" name="email" className="form-control" placeholder="Your Email"
                                     />
                                 </div>
-                                <div className="form-group">
-                                    <label><i className="fa-solid fa-layer-group"></i></label>
-                                    <select name="type" className="loan-type">
-                                        <option>Loan type</option>
-                                        <option value="Personal">Personal Loans</option>
-                                        <option value="Emergency">Emergency Loans</option>
-                                        <option value="Business">Business Loans</option>
-                                        <option value="Student">Student Loans</option>
-                                        <option value="Mortgage">Mortgage Loans</option>
-                                        <option value="Small-Business">Small Business Loans</option>
-                                    </select>
-                                </div>
                                 <div className="inquiry-form-group-one">
                                     <label><i className="fa-solid fa-message"></i></label>
                                     <textarea name="massage" className="form-control"
