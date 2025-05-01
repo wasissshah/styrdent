@@ -69,11 +69,11 @@ export default function Home() {
                         <div className="col-lg-8">
                             <div className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block">
                                 <div className="heading-box">
-                                    <p className="text-uppercase letter-spacing text-white">Strydent’s uav</p>
+                                    <p className="text-uppercase letter-spacing text-white">Strydent’s AUV</p>
                                     <h2 className="text-white wow fadeInUp animated animated">Autonomous Underwater Mission Capabilities</h2>
                                 </div>
                                 <div className="section-details mb-4">
-                                    <p className="text-white">The Strydent’s UAV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
+                                    <p className="text-white">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
                                 <a href="contact-us.html" className="btn btn-primary v2">Capabilities <i className="flaticon-next"></i></a>
                             </div>
@@ -221,12 +221,12 @@ export default function Home() {
                 <div className="container-fluid opacity-15">
                     <div className="cta-two-box-one">
                         <div className="cta-two-category-box">
-                            <h1 className="cta-two-category-title font-900 fs-180 text-dark my-2 my-xl-4">Strydent’s Auvs Strydent’s Auvs</h1>
+                            <h1 className="cta-two-category-title font-900 fs-180 text-dark my-2">Strydent’s Auvs Strydent’s Auvs</h1>
                         </div>
                     </div>
                     <div className="cta-two-box-two">
                         <div className="cta-two-category-box">
-                            <h2 className="cta-two-category-title font-900 fs-180 text-dark my-2 my-xl-4">Strydent’s Auvs Strydent’s Auvs</h2>
+                            <h2 className="cta-two-category-title font-900 fs-180 text-dark my-2">Strydent’s Auvs Strydent’s Auvs</h2>
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@ export default function Home() {
                                     <h3 className="text-white">Meet the Minds <br className="d-lg-none"/>Behind the Mission</h3>
                                 </div>
                                 <div className="section-details mb-4">
-                                    <p className="text-white text-center">The Strydent’s UAV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
+                                    <p className="text-white text-center">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
                                 <a href="contact-us.html" className="btn btn-primary v2">view more <i className="flaticon-next"></i></a>
                             </div>

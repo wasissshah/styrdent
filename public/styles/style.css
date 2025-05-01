@@ -1498,6 +1498,9 @@ ul.mobile-menu-list .dropdown ul li a {
     margin-bottom: 32px;
     display: flex;
     justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .loading-text span {
