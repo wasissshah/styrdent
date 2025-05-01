@@ -233,7 +233,7 @@ export default function Home() {
                 </div>
             </section>
             <section className="team">
-                <Image src="/img/team.jpg" className="team-background img-fluid" width="1900" height="1000" />
+                <Image src="/img/team.jpg" className="team-background img-fluid" width="1900" height="1000" alt="Team background" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 mx-auto">
