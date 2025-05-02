@@ -27,16 +27,16 @@
     }
     if ($('.header-right-end').length) {
         // mobail nav
-        $(".header-right-end").click(function() {
+        $(document).on('click', ".header-right-end", function() {
             $(".mobile-nav-wrapper").addClass("expanded");
         });
-        $(".mobile-nav-toggler").click(function() {
+        $(document).on('click', ".mobile-nav-toggler", function() {
             $(".mobile-nav-wrapper").removeClass("expanded");
         });
-        $(".header-right-end").click(function() {
+        $(document).on('click', ".header-right-end", function() {
             $("body").addClass("locked");
         });
-        $(".mobile-nav-toggler").click(function() {
+        $(document).on('click', ".mobile-nav-toggler", function() {
             $("body").removeClass("locked");
         });
 

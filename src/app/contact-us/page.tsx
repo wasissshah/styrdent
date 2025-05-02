@@ -20,12 +20,10 @@ export default function ContactUs() {
                 title="Contact"
                 backgroundImage="/img/background/contact-bg.jpg"
                 breadcrumb={[
-                    { label: "Home", href: "/loanlift" },
-                    { label: "Page", href: "#" },
-                    { label: "Contact Us", href: "#" },
+                    { label: "Home", href: "/" },
+                    { label: "Contact Us", href: "/contact-us" },
                 ]}
             />
-            <ContactSection />
             <ContactForm />
         </MainLayout>
     );

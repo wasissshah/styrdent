@@ -33,9 +33,9 @@ export default function Footer() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <ul>
-                                                    <li><Link href="/l">Blog</Link></li>
-                                                    <li><Link href="/">Contact</Link></li>
-                                                    <li><Link href="/">Faq</Link></li>
+                                                    <li><Link href="/blog">Blog</Link></li>
+                                                    <li><Link href="/contact-us">Contact</Link></li>
+                                                    <li><Link href="/faq">Faq</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -93,9 +93,9 @@ export default function Footer() {
                             <li className="menu-item-has-children"><Link href="#">Capabilities</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Mission</Link></li>
                             <li className="menu-item-has-children"><Link href="/team">Team</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Blog</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Contact</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Faq</Link></li>
+                            <li className="menu-item-has-children"><Link href="/blog">Blog</Link></li>
+                            <li className="menu-item-has-children"><Link href="/contact-us">Contact</Link></li>
+                            <li className="menu-item-has-children"><Link href="/faq">Faq</Link></li>
                         </ul>
                     </div>
                 </div>

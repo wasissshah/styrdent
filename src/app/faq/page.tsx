@@ -21,9 +21,8 @@ export default function ContactUs() {
                 title="FAQS"
                 backgroundImage="/img/background/team-bg.jpg"
                 breadcrumb={[
-                    { label: "Home", href: "/loanlift" },
-                    { label: "Page", href: "#" },
-                    { label: "FAQS", href: "#" },
+                    { label: "Home", href: "/" },
+                    { label: "FAQS", href: "/faq" },
                 ]}
             />
             <FAQSection />

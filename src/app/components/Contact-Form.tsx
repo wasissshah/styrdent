@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactForm() {
     return (
@@ -24,27 +25,28 @@ export default function ContactForm() {
                                 </div>
                                 <div className="inquiry-form-group-one">
                                     <label><i className="fa-solid fa-message"></i></label>
-                                    <textarea name="massage" className="form-control"
+                                    <textarea name="massage" className="form-control" rows="6"
                                               placeholder="Your Massage Here"></textarea>
                                 </div>
                                 <div className="form-group">
-                                    <button type="submit" className="btn btn-outline-secondary">Get a Quote <i
-                                        className="flaticon-next"></i></button>
+                                    <div className="btn-wrapper">
+                                        <button type="submit" className="btn btn-primary v2">Submit</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div className="col-lg-4">
                         <div className="contact-form-right">
-                            <h3>Say Hii to LoanLift 👋</h3>
+                            <h3>Say Hii to STRYDENT</h3>
                             <Image src="/img/contact-us/contact-from-image.jpg" width="336" height="224" alt="" />
                                 <div className="contact-details">
-                                    <p>Have questions about your loan options? Our team is here to help! Whether you're
-                                        seeking guidance on loan products.</p>
-                                    <p>We're committed to providing personalized support. Reach out today and let's take
-                                        the next step towards securing the financing you need.</p>
+                                    <p className="text-white mb-0 letter-spacing text-uppercase">Phone</p>
+                                    <a href="tel:+1 (555) 123-4567" className="menu-phone"> <i className="flaticon-phone"></i>+1 (555) 123-4567</a>
+                                    <p className="text-white mb-0 letter-spacing text-uppercase">Email</p>
+                                    <a href="mailto:info@strydent.com" className="menu-phone"> <i className="flaticon-phone"></i>info@strydent.com</a>
                                 </div>
-                                <h4>Social media</h4>
+                                <p className="text-white mb-0 letter-spacing text-uppercase">Social media</p>
                                 <ul className="contact-social-media">
                                     <li><a href="https://www.facebook.com/"><i className="fa-brands fa-facebook-f"></i></a>
                                     </li>

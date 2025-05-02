@@ -1,4 +1,5 @@
 import MainLayout from "./layouts/MainLayout";
+import { motion } from "framer-motion";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Cta from "./components/Cta";
@@ -70,7 +71,7 @@ export default function Home() {
                             <div className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block">
                                 <div className="heading-box">
                                     <p className="text-uppercase letter-spacing text-white">Strydent’s AUV</p>
-                                    <h2 className="text-white wow fadeInUp animated animated">Autonomous Underwater Mission Capabilities</h2>
+                                    <h2 className="text-white">Autonomous Underwater Mission Capabilities</h2>
                                 </div>
                                 <div className="section-details mb-4">
                                     <p className="text-white">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
@@ -85,8 +86,8 @@ export default function Home() {
                 <div className="services-two-inner-bg bg-white border-0">
                     <div className="container">
                         <div className="heading-box mb-5">
-                            <span className="heading-subtitle wow fadeInUp animated animated text-uppercase border-0 px-0">Strydent Technology</span>
-                            <h2 className="heading-title wow fadeInUp animated animated">Technology That Powers the Depths</h2>
+                            <span className="heading-subtitle text-uppercase border-0 px-0">Strydent Technology</span>
+                            <h2 className="heading-title">Technology That Powers the Depths</h2>
                         </div>
                         <div className="row">
                             <div className="col-lg-3">
@@ -135,6 +136,7 @@ export default function Home() {
                                                 playsInline
                                             >
                                                 <source src="/img/tab-video.mp4" type="video/mp4" />
+                                                <source src="/img/tab-video.mp4.webm" type="video/webm" />
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
@@ -157,6 +159,7 @@ export default function Home() {
                                                 playsInline
                                             >
                                                 <source src="/img/tab-video.mp4" type="video/mp4" />
+                                                <source src="/img/tab-video.mp4.webm" type="video/webm" />
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
@@ -179,6 +182,7 @@ export default function Home() {
                                                 playsInline
                                             >
                                                 <source src="/img/tab-video.mp4" type="video/mp4" />
+                                                <source src="/img/tab-video.mp4.webm" type="video/webm" />
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
@@ -201,6 +205,7 @@ export default function Home() {
                                                 playsInline
                                             >
                                                 <source src="/img/tab-video.mp4" type="video/mp4" />
+                                                <source src="/img/tab-video.mp4.webm" type="video/webm" />
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
