@@ -25,7 +25,7 @@ export default function ContactForm() {
                                 </div>
                                 <div className="inquiry-form-group-one">
                                     <label><i className="fa-solid fa-message"></i></label>
-                                    <textarea name="massage" className="form-control" rows="6"
+                                    <textarea name="massage" className="form-control"
                                               placeholder="Your Massage Here"></textarea>
                                 </div>
                                 <div className="form-group">
