@@ -1,4 +1,5 @@
 import MainLayout from "./../layouts/MainLayout";
+import Image from "next/image";
 import Hero from "./../components/Hero";
 import Services from "./../components/Services";
 import Cta from "./../components/Cta";
@@ -12,19 +13,21 @@ import WhoWeAre from "./../components/Who-We-Are";
 import PageBanner from "../components/Page-Banner";
 import ContactSection from "../components/Contact-Section";
 import ContactForm from "../components/Contact-Form";
+import AboutSection from "../components/About-Section";
 
-export default function ContactUs() {
+export default function AboutUs() {
     return (
         <MainLayout>
             <PageBanner
-                title="Contact"
+                title="Our Mission"
                 backgroundImage="/img/footer-bg.jpg"
                 breadcrumb={[
                     { label: "Home", href: "/" },
-                    { label: "Contact Us", href: "/contact-us" },
+                    { label: "Mission", href: "/mission" },
                 ]}
             />
-            <ContactForm />
+            <AboutSection />
+            <Cta />
         </MainLayout>
     );
 }

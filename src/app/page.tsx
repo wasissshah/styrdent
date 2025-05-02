@@ -1,16 +1,8 @@
+"use client";
 import MainLayout from "./layouts/MainLayout";
 import { motion } from "framer-motion";
-import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Cta from "./components/Cta";
-import RecentBlogs from "./components/Recent-Blogs";
-import Testimonials from "./components/Testimonials";
-import Teams from "./components/Teams";
-import Process from "./components/Process";
-import Partners from "./components/Partners";
-import WhyChoose from "./components/Why-Choose";
-import WhoWeAre from "./components/Who-We-Are";
-import AboutSection from "./components/About-Section";
 import Image from "next/image";
 import Hero2 from "./components/Hero2";
 
@@ -68,7 +60,11 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
-                            <div className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block">
+                            <motion.div
+                                initial={{ opacity: 0, x: -50}}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5, ease: "easeIn" }}
+                                className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block">
                                 <div className="heading-box">
                                     <p className="text-uppercase letter-spacing text-white">Strydent’s AUV</p>
                                     <h2 className="text-white">Autonomous Underwater Mission Capabilities</h2>
@@ -77,7 +73,7 @@ export default function Home() {
                                     <p className="text-white">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
                                 <a href="contact-us.html" className="btn btn-primary v2">Capabilities <i className="flaticon-next"></i></a>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
@@ -85,11 +81,19 @@ export default function Home() {
             <section className="services-two">
                 <div className="services-two-inner-bg bg-white border-0">
                     <div className="container">
-                        <div className="heading-box mb-5">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50}}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, ease: "easeIn" }}
+                            className="heading-box mb-5">
                             <span className="heading-subtitle text-uppercase border-0 px-0">Strydent Technology</span>
                             <h2 className="heading-title">Technology That Powers the Depths</h2>
-                        </div>
-                        <div className="row">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, y: 50}}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, ease: "easeIn" }}
+                            className="row">
                             <div className="col-lg-3">
                                 <ul className="nav nav-tabs d-block border-0" id="services-tab" role="tablist">
                                     <li className="nav-item" role="presentation">
@@ -218,11 +222,11 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
-            <section className="cta-two py-0 bg-white">
+            <section className="cta-two pb-0 bg-white">
                 <div className="container-fluid opacity-15">
                     <div className="cta-two-box-one">
                         <div className="cta-two-category-box">
@@ -241,7 +245,11 @@ export default function Home() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 mx-auto">
-                            <div className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block text-center">
+                            <motion.div
+                                initial={{ opacity: 0, y: 50}}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, ease: "easeIn" }}
+                                className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block text-center">
                                 <div className="heading-box text-center">
                                     <p className="text-uppercase letter-spacing text-white">OUR TEAM</p>
                                     <h3 className="text-white">Meet the Minds <br className="d-lg-none"/>Behind the Mission</h3>
@@ -250,7 +258,7 @@ export default function Home() {
                                     <p className="text-white text-center">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
                                 <a href="contact-us.html" className="btn btn-primary v2">view more <i className="flaticon-next"></i></a>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

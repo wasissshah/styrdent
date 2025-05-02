@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 const services = [
     {
         title: "Fleet-Based Swarm Intelligence",
@@ -43,27 +45,43 @@ export default function Services() {
         <section className="services-section-one">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-6 offset-lg-3 mb-2 mb-lg-5">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50}}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, ease: "easeIn" }}
+                        className="col-lg-6 offset-lg-3 mb-2 mb-lg-5">
                         <Image src="/img/auv-2.jpg" className="img-fluid object" width="782" height="345" alt="object" />
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-10 m-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50}}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        className="col-lg-10 m-auto">
                         <div className="text-center mb-5">
                             <span className="heading-subtitle border-0 text-uppercase mb-0">About Us</span>
                             <h1 className="heading-title text-uppercase font-800 mb-2"><span className="text-primary">Strydent’s</span> Autonomous Underwater Vehicles</h1>
                             <p>Strydent Autonomous Technologies’ fleet of next-generation Autonomous Underwater Vehicles will provide strategic real-time data analysis in coordination with all branches of the U.S. military to protect the homeland especially areas surrounding the U.S. extended continental shelf, U.S. military sea assets, and all assets in the U.S. national interest.</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-6 m-auto">
+                    <motion.div
+                        initial={{ opacity: 0, y: 50}}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        className="col-lg-6 m-auto">
                         <div className="heading-box text-center">
                             <h3 className="heading-title font-dm-sans text-uppercase fw-bolder">Advanced Features Powering Next-Gen AUVs</h3>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className="service-one-inner">
+                <motion.div
+                    initial={{ opacity: 0, y: 50}}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                    className="service-one-inner">
                     {services.map((service, index) => (
                         <div className="service-one-box" key={index}>
                             <div className="service-one-box-image">
@@ -81,7 +99,7 @@ export default function Services() {
                             {/*</a>*/}
                         </div>
                     ))}
-                </div>
+                </motion.div>
                 <div className="text-center">
                     <Link href="" className="btn btn-primary v2">Learn More</Link>
                 </div>

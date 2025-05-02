@@ -8,7 +8,17 @@ const MotionImage = motion(Image);
 export default function Hero2() {
     return (
         <section className="banner-two">
-            <MotionImage src="/img/logo2.svg" className="logo-lg fadeOut" width="200" height="100" alt="logo" />
+            <div className="logo-wrapper">
+                <MotionImage
+                    src="/img/logo2.svg"
+                    className="logo-lg fadeOut"
+                    initial={{ opacity: 0, x: -400}}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, ease: "easeIn" }}
+                    width="200"
+                    height="100"
+                    alt="logo" />
+            </div>
 
             <div className="container-fluid p-0">
                 <div className="banner-two-slider">
@@ -28,7 +38,12 @@ export default function Hero2() {
                             </video>
                         </div>
                         <div className="container">
-                            <div className="m-auto">
+                            <motion.div
+                                className="m-auto"
+                                initial={{ opacity: 0, y: 50}}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                            >
                                 <div className="banner-two-info text-center">
                                     <div className="section-details">
                                         <p className="text-uppercase letter-spacing">Strydent Autonomous Technologies</p>
@@ -48,7 +63,7 @@ export default function Hero2() {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

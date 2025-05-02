@@ -31,10 +31,9 @@ export default function AboutUs() {
             <section className="capabilities-section">
                 <div className="container">
                     <div className="capabilities-card">
-                        <div className="row">
+                        <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left">
-                                    <h2 className="mb-0 text-white">Autonomous Navigation</h2>
+                                <div className="card-left opacity-0">
                                     <div className="product-img my-5">
                                         <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
                                     </div>
@@ -42,6 +41,7 @@ export default function AboutUs() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="card-right">
+                                    <h3 className="mb-0 text-white">Autonomous Navigation</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                                     <div className="text-white my-3">Specifications</div>
@@ -75,8 +75,51 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left">
-                                    <h2 className="mb-0 text-white">Fleet Coordination (Swarm Intelligence)</h2>
+                                <div className="card-left opacity-0">
+
+                                    <div className="product-img my-5 ">
+                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="card-right">
+                                    <h3 className="mb-0 text-white">Fleet Coordination (Swarm Intelligence)</h3>
+                                    <div className="text-white my-3">Description</div>
+                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                    <div className="text-white my-3">Specifications</div>
+                                    <div className="row g-0">
+                                        <div className="col-lg-4">
+                                            <div className="option">
+                                                <div className="dot"></div>
+                                                <h3 className="text-white mb-0">30 nm</h3>
+                                                <div className="text-white">Range</div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="option">
+                                                <div className="dot"></div>
+                                                <h3 className="text-white mb-0">30 nm</h3>
+                                                <div className="text-white">Range</div>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-4">
+                                            <div className="option last">
+                                                <div className="dot"></div>
+                                                <h3 className="text-white mb-0">30 nm</h3>
+                                                <div className="text-white">Range</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="capabilities-card">
+                        <div className="row flex-row-reverse">
+                            <div className="col-lg-6">
+                                <div className="card-left opacity-0">
+
                                     <div className="product-img my-5">
                                         <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
                                     </div>
@@ -84,6 +127,7 @@ export default function AboutUs() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="card-right">
+                                    <h3 className="mb-0 text-white">Multi-Sensor Data Collection</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                                     <div className="text-white my-3">Specifications</div>
@@ -117,8 +161,8 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left">
-                                    <h2 className="mb-0 text-white">Multi-Sensor Data Collection</h2>
+                                <div className="card-left opacity-0">
+
                                     <div className="product-img my-5">
                                         <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
                                     </div>
@@ -126,6 +170,7 @@ export default function AboutUs() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="card-right">
+                                    <h3 className="mb-0 text-white">Solar-Powered Energy System</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                                     <div className="text-white my-3">Specifications</div>
@@ -157,10 +202,9 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="capabilities-card">
-                        <div className="row">
+                        <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left">
-                                    <h2 className="mb-0 text-white">Solar-Powered Energy System</h2>
+                                <div className="card-left opacity-0">
                                     <div className="product-img my-5">
                                         <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
                                     </div>
@@ -168,48 +212,7 @@ export default function AboutUs() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="card-right">
-                                    <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                                    <div className="text-white my-3">Specifications</div>
-                                    <div className="row g-0">
-                                        <div className="col-lg-4">
-                                            <div className="option">
-                                                <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="option">
-                                                <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
-                                            <div className="option last">
-                                                <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="capabilities-card">
-                        <div className="row">
-                            <div className="col-lg-6">
-                                <div className="card-left">
-                                    <h2 className="mb-0 text-white">Secure Encrypted Communication</h2>
-                                    <div className="product-img my-5">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="card-right">
+                                    <h3 className="mb-0 text-white">Secure Encrypted Communication</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                                     <div className="text-white my-3">Specifications</div>

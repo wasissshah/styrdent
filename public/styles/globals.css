@@ -109,17 +109,20 @@ section {
 .banner-one,
 .banner-two {
   min-height: 100vh;
-  background: var(--black);
+  background: var(--primary-dark);
   position: relative;
   z-index: 2;
 }
-.banner-one .logo-lg,
-.banner-two .logo-lg {
+.banner-one .logo-wrapper,
+.banner-two .logo-wrapper {
   position: absolute;
   top: 60px;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 2;
+}
+.banner-one .logo-lg,
+.banner-two .logo-lg {
   width: 500px;
 }
 .banner-one .banner-one-slider-item,
@@ -524,6 +527,25 @@ ul#services-tab .nav-link span {
   }
   .team .section-details {
     display: none;
+  }
+  .inner-page-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .inner-page-hero p {
+    font-size: 12px;
+  }
+  .inner-page-hero h1 {
+    font-size: 30px;
+  }
+  .blog-list-section,
+  .about-four {
+    padding: 50px 0;
+  }
+  .contact-form,
+  .team-one,
+  .team-details-section {
+    padding: 50px 0;
   }
   .footer-one .footer-one-about {
     text-align: center;
