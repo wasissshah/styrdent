@@ -1,20 +1,20 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import MainLayout from "./../layouts/MainLayout";
+import { Suspense } from "react";
 import Image from "next/image";
-import Cta from "../components/Cta";
+import MainLayout from "../layouts/MainLayout";
 import PageBanner from "../components/Page-Banner";
+import Cta from "../components/Cta";
 
-export default function TeamDetailPage() {
+function TeamDetailContent() {
     const searchParams = useSearchParams();
-
     const name = searchParams.get("name");
     const role = searchParams.get("role");
     const image = searchParams.get("image");
 
     return (
-        <MainLayout>
+        <>
             <PageBanner
                 title={name || "Team Member"}
                 backgroundImage="/img/footer-bg.jpg"
@@ -24,6 +24,7 @@ export default function TeamDetailPage() {
                     { label: name || "Details", href: "#" },
                 ]}
             />
+
             <div className="team-details-section">
                 <div className="container">
                     <div className="row gutter-y-30 gutter-x-15">
@@ -61,26 +62,24 @@ export default function TeamDetailPage() {
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-lg-8">
                             <div className="team-details-block">
                                 <p>
-                                    {name} brings deep expertise to our organization, with a focus on innovation,
-                                    leadership, and impact. Known for their strategic thinking and commitment to
-                                    excellence, they play a vital role in our mission-driven approach.
+                                    {name} brings deep expertise to our organization, with a focus on innovation, leadership, and impact.
+                                    Known for their strategic thinking and commitment to excellence, they play a vital role in our
+                                    mission-driven approach.
                                 </p>
                             </div>
+
                             <div className="team-details-block">
                                 <h4>Career</h4>
                                 <p>
-                                    Their career path includes leadership positions in mission-critical industries,
-                                    where they’ve influenced teams and delivered exceptional results.
+                                    Their career path includes leadership positions in mission-critical industries, where they’ve
+                                    influenced teams and delivered exceptional results.
                                 </p>
-                                <ul className="team-details-list">
-                                    <li>Degree in Engineering or Business</li>
-                                    <li>10+ years of technical or executive experience</li>
-                                    <li>Published in peer-reviewed industry journals</li>
-                                </ul>
                             </div>
+
                             <div className="team-details-block">
                                 <h4>Work Experience</h4>
                                 <ul className="team-details-list">
@@ -89,8 +88,9 @@ export default function TeamDetailPage() {
                                     <li>Technical Director | DeepSea Systems</li>
                                 </ul>
                             </div>
+
                             <div className="team-details-block">
-                                <h4>Achievements:</h4>
+                                <h4>Achievements</h4>
                                 <ul className="team-details-list">
                                     <li>Developed key AUV AI algorithms used in real-world operations</li>
                                     <li>Led successful missions across strategic underwater domains</li>
@@ -101,7 +101,18 @@ export default function TeamDetailPage() {
                     </div>
                 </div>
             </div>
+
             <Cta />
+        </>
+    );
+}
+
+export default function TeamDetailPage() {
+    return (
+        <MainLayout>
+            <Suspense fallback={<div>Loading...</div>}>
+                <TeamDetailContent />
+            </Suspense>
         </MainLayout>
     );
 }
