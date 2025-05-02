@@ -92,6 +92,7 @@ section {
   opacity: 0;
 }
 
+.main-header#logo-visible .main-menu-logo,
 .main-header.sticky-fixed .main-menu-logo {
   opacity: 1;
 }
@@ -100,6 +101,11 @@ section {
   filter: invert(1) !important;
 }
 
+.inner-page-hero {
+  padding-top: 260px;
+  padding-bottom: 80px;
+  background-image: url("/img/footer-bg.jpg") !important;
+}
 .banner-one,
 .banner-two {
   min-height: 100vh;

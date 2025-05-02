@@ -44,7 +44,7 @@ export default function Services() {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 offset-lg-3 mb-2 mb-lg-5">
-                        <Image src="/img/object.svg" className="img-fluid object" width="782" height="345" alt="object" />
+                        <Image src="/img/auv-2.jpg" className="img-fluid object" width="782" height="345" alt="object" />
                     </div>
                 </div>
                 <div className="row">

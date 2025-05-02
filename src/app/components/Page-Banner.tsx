@@ -19,13 +19,14 @@ export default function PageBanner({
     return (
         <div
             className="inner-page-hero bg-dark-v2"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
+            style={{ backgroundImage: `url(${backgroundImage}) !important` }}
         >
             <div className="container">
-                <div className="hero-heading-title">
+                <div className="hero-heading-title text-center">
+                    <p className="text-uppercase letter-spacing text-primary position-relative z-3">Strydent Autonomous Technologies</p>
                     <h1 className="text-white display-1 fw-bold">{title}</h1>
                 </div>
-                <ul className="bradcrumb">
+                <ul className="bradcrumb justify-content-center">
                     {breadcrumb.map((item, index) => (
                         <li key={index}>
                             <a href={item.href}>{item.label}</a>

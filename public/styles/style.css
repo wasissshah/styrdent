@@ -4168,7 +4168,6 @@ ul.why-choose-three-counter {
 }
 
 .team-one-box:hover .team-one-image::after {
-    backdrop-filter: blur(4px);
     box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.1) inset;
 }
 
@@ -7217,7 +7216,7 @@ ul.team-details-list li {
 }
 
 ul.team-details-list li::after {
-    content: url(/img/shape/star-gradiant-shape.png);
+    content: url('/img/shape/star-gradiant-shape.png');
     position: absolute;
     top: 6px;
     left: -24px;

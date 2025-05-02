@@ -19,7 +19,7 @@ export default function ContactUs() {
         <MainLayout>
             <PageBanner
                 title="Meet the Team"
-                backgroundImage="/img/background/team-bg.jpg"
+                backgroundImage="/img/footer-bg.jpg"
                 breadcrumb={[
                     { label: "Home", href: "/" },
                     { label: "Team", href: "#" },

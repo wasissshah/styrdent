@@ -28,7 +28,7 @@ export default function Footer() {
                                                     <li><Link href="/">Home</Link></li>
                                                     <li><Link href="/">Capabilities</Link></li>
                                                     <li><Link href="/">Mission</Link></li>
-                                                    <li><Link href="/">Team</Link></li>
+                                                    <li><Link href="/team">Team</Link></li>
                                                 </ul>
                                             </div>
                                             <div className="col-lg-6">
@@ -46,10 +46,9 @@ export default function Footer() {
                                         <p className="letter-spacing text-uppercase text-white">Contact us</p>
                                         <ul>
                                             <li><Link href="mailto:Loanlift@gmail.com"><i
-                                                className="flaticon-envelope"></i>help@company.com</Link></li>
-                                            <li><Link href="tel:+020.098.45611"><i className="flaticon-phone"></i>+1
-                                                20.098.456
-                                                11</Link></li>
+                                                className="flaticon-envelope"></i>info@strydent.com</Link></li>
+                                            <li><Link href="tel:(555) 123-4567"><i className="flaticon-phone"></i>+1
+                                                (555) 123-4567</Link></li>
                                         </ul>
                                     </div>
                                     <div className="footer-One-subscribe">
@@ -93,7 +92,7 @@ export default function Footer() {
                             <li className="menu-item-has-children"><Link href="#">Home</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Capabilities</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Mission</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Team</Link></li>
+                            <li className="menu-item-has-children"><Link href="/team">Team</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Blog</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Contact</Link></li>
                             <li className="menu-item-has-children"><Link href="#">Faq</Link></li>

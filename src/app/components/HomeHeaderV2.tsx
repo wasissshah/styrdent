@@ -1,24 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import {usePathname} from "next/navigation";
 
 const HeaderV2 = () => {
+    const pathname = usePathname();
+    const isHome = pathname === "/";
     return (
         <div>
-            <div className="preloader">
-                <div className="loading-container">
-                    <div className="loading-text">
-                        <span>S</span>
-                        <span>T</span>
-                        <span>R</span>
-                        <span>Y</span>
-                        <span>D</span>
-                        <span>E</span>
-                        <span>N</span>
-                        <span>T</span>
-                    </div>
-                </div>
-            </div>
-            <header className="main-header">
+            {/*<div className="preloader">*/}
+            {/*    <div className="loading-container">*/}
+            {/*        <div className="loading-text">*/}
+            {/*            <span>S</span>*/}
+            {/*            <span>T</span>*/}
+            {/*            <span>R</span>*/}
+            {/*            <span>Y</span>*/}
+            {/*            <span>D</span>*/}
+            {/*            <span>E</span>*/}
+            {/*            <span>N</span>*/}
+            {/*            <span>T</span>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <header className="main-header" id={isHome ? ''  : 'logo-visible'}>
                 <div className="container-fluid px-0">
                     <nav className="main-menu">
                         <div className="main-menu-logo">

@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Header from "./../components/Header";
-import HomeHeader from "./../components/HomeHeaderV2";
+import HomeHeaderV2 from "./../components/HomeHeaderV2";
 import Footer from "./../components/Footer";
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
@@ -11,7 +11,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
     return (
         <>
-            {isHome ? <HomeHeader /> : <Header />}
+            <HomeHeaderV2 />
             <main>{children}</main>
             <Footer />
         </>

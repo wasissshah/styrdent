@@ -77,11 +77,13 @@ section {
   z-index: 2;
   background-color: var(--white);
 }
+
 .main-header {
   .main-menu-logo {
     opacity: 0;
   }
 }
+.main-header#logo-visible,
 .main-header.sticky-fixed {
   .main-menu-logo {
     opacity: 1;
@@ -92,6 +94,14 @@ section {
     img {
       filter: invert(1) !important;
     }
+  }
+}
+.inner-page-hero {
+  padding-top: 260px;
+  padding-bottom: 80px;
+  background-image: url("/img/footer-bg.jpg") !important;
+  .object {
+
   }
 }
 .banner-one,
