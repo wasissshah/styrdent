@@ -27,7 +27,7 @@ export default function Footer() {
                                                 <ul>
                                                     <li><Link href="/">Home</Link></li>
                                                     <li><Link href="/">Capabilities</Link></li>
-                                                    <li><Link href="/">Mission</Link></li>
+                                                    <li><Link href="/mission">Mission</Link></li>
                                                     <li><Link href="/team">Team</Link></li>
                                                 </ul>
                                             </div>
@@ -89,9 +89,9 @@ export default function Footer() {
                     </Link>
                     <div className="mobile-nav-container">
                         <ul className="mobile-menu-list">
-                            <li className="menu-item-has-children"><Link href="#">Home</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Capabilities</Link></li>
-                            <li className="menu-item-has-children"><Link href="#">Mission</Link></li>
+                            <li className="menu-item-has-children"><Link href="/">Home</Link></li>
+                            <li className="menu-item-has-children"><Link href="/">Capabilities</Link></li>
+                            <li className="menu-item-has-children"><Link href="/mission">Mission</Link></li>
                             <li className="menu-item-has-children"><Link href="/team">Team</Link></li>
                             <li className="menu-item-has-children"><Link href="/blog">Blog</Link></li>
                             <li className="menu-item-has-children"><Link href="/contact-us">Contact</Link></li>
