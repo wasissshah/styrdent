@@ -93,17 +93,28 @@
             slidesToScroll: 1
         })
     }
-    $('.img-wrapper').slick({
-        dots: false,
-        infinite: true,
-        speed: 200,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 1,
-        fade: true,
-        arrows: false,
-        slidesToScroll: 1
-    })
+    function initSlider() {
+        $('.img-wrapper').slick({
+            dots: false,
+            infinite: true,
+            speed: 200,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            fade: true,
+            arrows: false,
+            slidesToScroll: 1
+        });
+    }
+    initSlider();
+    $(document).on('click', 'a', function () {
+        if ($('.img-wrapper').hasClass('slick-initialized')) {
+            $('.img-wrapper').slick('unslick');
+        }
+        initSlider();
+    });
+
+
     if ($('#team-slider').length) {
         $('#team-slider').slick({
             speed: 500,
