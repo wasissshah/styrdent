@@ -101,7 +101,7 @@ export default function Services() {
                     ))}
                 </motion.div>
                 <div className="text-center">
-                    <Link href="" className="btn btn-primary v2">Learn More</Link>
+                    <Link href="/capabilities" className="btn btn-primary v2">Learn More</Link>
                 </div>
             </div>
         </section>

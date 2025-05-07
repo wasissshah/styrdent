@@ -59,7 +59,7 @@ export default function Hero2() {
                                     </div>
                                     <div className="banner-two-btn">
                                         <div className="btn-wrapper btn-shadow">
-                                            <Link href="" className="btn btn-primary v2">Capabilities</Link>
+                                            <Link href="/capabilities" className="btn btn-primary v2">Capabilities</Link>
                                         </div>
                                     </div>
                                 </div>
