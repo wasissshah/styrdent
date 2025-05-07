@@ -40,6 +40,9 @@
 .bg-dark-v2 {
   background: rgba(29, 35, 47, 0.6) !important;
 }
+.bg-primary-dark {
+  background: #171D28 !important;
+}
 
 .font-play,
 .font-play * {
@@ -136,6 +139,70 @@ section {
     object-fit: cover;
   }
 }
+.banner-two.v2 {
+  min-height: 100vh;
+  background: #171D28;
+  position: relative;
+  z-index: 2;
+  &:after {
+    content: '';
+    position: absolute;
+    right: -400px;
+    top: -400px;
+    z-index: 2;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    filter: blur(100px);
+    opacity: 0.2;
+  }
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+  .banner-title {
+    h1 {
+      font-weight: 900 !important;
+      .small {
+        font-size: 110px;
+        line-height: 120px;
+      }
+      .text-gradient {
+        background: -webkit-linear-gradient(#fff, var(--primary-dark));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  .img-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      background-color: var(--primary);
+      border-radius: 50%;
+      width: 700px;
+      height: 700px;
+      filter: blur(100px);
+      opacity: 0.2;
+    }
+    img.obj {
+      width: 1000px;
+      height: auto;
+      margin: -100px auto 0;
+      display: block;
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
 .about-four {
   position: relative;
   display: flex;
@@ -194,6 +261,20 @@ section {
       }
     }
   }
+  .service-one-inner.v2 {
+    margin: 0;
+    border-color: rgba(255, 255, 255, 0.2);
+    &:before {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .service-one-icon-box img {
+       filter: brightness(1);
+    }
+    .service-one-box {
+      border-top-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
 }
 .why-choose-section-one {
   position: relative;
@@ -231,6 +312,7 @@ section {
       padding: 20px;
       border-top: 2px solid rgba(255, 255, 255, 0.148);
       border-right: 2px solid rgba(255, 255, 255, 0.148);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.148);
     }
     .option.last {
       border-right: unset;
@@ -383,6 +465,8 @@ ul#services-tab {
     }
   }
 }
+
+
 @media (max-width: 1600px) {
   .fs-180 {
     font-size: 90px !important;

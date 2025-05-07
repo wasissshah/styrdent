@@ -42,6 +42,10 @@
   background: rgba(29, 35, 47, 0.6) !important;
 }
 
+.bg-primary-dark {
+  background: #171D28 !important;
+}
+
 .font-play,
 .font-play * {
   font-family: Play, sans-serif !important;
@@ -143,6 +147,69 @@ section {
   object-fit: cover;
 }
 
+.banner-two.v2 {
+  min-height: 100vh;
+  background: #171D28;
+  position: relative;
+  z-index: 2;
+}
+.banner-two.v2:after {
+  content: "";
+  position: absolute;
+  right: -400px;
+  top: -400px;
+  z-index: 2;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  filter: blur(100px);
+  opacity: 0.2;
+}
+.banner-two.v2 .container {
+  position: relative;
+  z-index: 3;
+}
+.banner-two.v2 .banner-title h1 {
+  font-weight: 900 !important;
+}
+.banner-two.v2 .banner-title h1 .small {
+  font-size: 110px;
+  line-height: 120px;
+}
+.banner-two.v2 .banner-title h1 .text-gradient {
+  background: -webkit-linear-gradient(#fff, var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-two.v2 .img-wrapper {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.banner-two.v2 .img-wrapper:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  filter: blur(100px);
+  opacity: 0.2;
+}
+.banner-two.v2 .img-wrapper img.obj {
+  width: 1000px;
+  height: auto;
+  margin: -100px auto 0;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+
 .about-four {
   position: relative;
   display: flex;
@@ -193,6 +260,19 @@ section {
 .services-section-one .service-one-box:hover .service-one-icon-box img, .services-section-one .service-one-box:focus .service-one-icon-box img {
   filter: unset;
 }
+.services-section-one .service-one-inner.v2 {
+  margin: 0;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.services-section-one .service-one-inner.v2:before {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.services-section-one .service-one-inner.v2 .service-one-icon-box img {
+  filter: brightness(1);
+}
+.services-section-one .service-one-inner.v2 .service-one-box {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
 
 .why-choose-section-one {
   position: relative;
@@ -231,6 +311,7 @@ section {
   padding: 20px;
   border-top: 2px solid rgba(255, 255, 255, 0.148);
   border-right: 2px solid rgba(255, 255, 255, 0.148);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.148);
 }
 .capabilities-section .capabilities-card .option.last {
   border-right: unset;

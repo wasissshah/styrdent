@@ -1,41 +1,116 @@
+"use client";
+
 import MainLayout from "./../layouts/MainLayout";
 import Image from "next/image";
-import Hero from "./../components/Hero";
-import Services from "./../components/Services";
-import Cta from "./../components/Cta";
-import RecentBlogs from "./../components/Recent-Blogs";
-import Testimonials from "./../components/Testimonials";
-import Teams from "./../components/Teams";
-import Process from "./../components/Process";
-import Partners from "./../components/Partners";
-import WhyChoose from "./../components/Why-Choose";
-import WhoWeAre from "./../components/Who-We-Are";
-import PageBanner from "../components/Page-Banner";
-import ContactSection from "../components/Contact-Section";
-import ContactForm from "../components/Contact-Form";
-import AboutSection from "../components/About-Section";
-import ProductSection from "../components/Product-Section";
-import ProductSectionTwo from "../components/Product-Section-Two";
-
-export default function AboutUs() {
+import {motion} from "framer-motion";
+import Link from "next/link";
+const services = [
+    {
+        title: "Strike Carrier Groups",
+        description: "Enhances fleet defense and threat detection for carrier-based naval operations.",
+        image: "/img/services/services-1.png",
+        iconClass: "/img/swarm-intelligence.svg",
+    },
+    {
+        title: "Naval Stations / Ports",
+        description: "Provides continuous underwater surveillance to secure critical maritime infrastructure.",
+        image: "/img/services/services-4.png",
+        iconClass: "/img/ai.svg",
+    },
+    {
+        title: "Low Altitude Radar Support",
+        description: "Extends situational awareness by coordinating with low-altitude surface and aerial radar systems.",
+        image: "/img/services/services-4.png",
+        iconClass: "/img/solar.svg",
+    },
+    {
+        title: "Search & Destroy",
+        description: "Autonomous targeting and neutralization of undersea threats with tactical precision.",
+        image: "/img/services/services-4.png",
+        iconClass: "/img/solar.svg",
+    },
+];
+export default function Capabilities() {
     return (
         <MainLayout>
-            <PageBanner
-                title="Capabilities"
-                backgroundImage=""
-                breadcrumb={[
-                    { label: "Home", href: "/" },
-                    { label: "Capabilities", href: "#" },
-                ]}
-            />
-            <section className="capabilities-section">
+            <section className="banner-two v2">
+                <div className="container-fluid p-0">
+                    <div className="banner-two-slider">
+                        <div className="banner-two-slider-item" data-dot="Fast Approval">
+                            <div className="container">
+                                <div
+                                    className="m-auto"
+                                    initial={{ opacity: 0, y: 50}}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                                >
+                                    <div className="banner-two-info text-center">
+                                        <div className="section-details">
+                                            <p className="text-uppercase letter-spacing text-primary">Strydent Autonomous Technologies</p>
+                                        </div>
+                                        <div className="banner-title">
+                                            <h1 className="fw-bolder"><span className="small">underwater</span><br/>
+                                                <span className="small text-gradient">autonomy vehicle</span></h1>
+                                        </div>
+                                        <div className="img-wrapper">
+                                            <Image src="/img/auv-3.png" className="obj" width="1000" height="524" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="services-section-one py-5 bg-primary-dark">
+                <div className="container">
+                    <div
+                        initial={{ opacity: 0, y: 50}}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}>
+                        <div className="heading-box text-center col-lg-10 mx-auto">
+                            <p className="text-uppercase letter-spacing text-primary">Capabilities</p>
+                            <h2 className="heading-title text-uppercase fw-bolder text-white">Protecting & Supporting U.S Assets & National Interests</h2>
+                        </div>
+                    </div>
+                    <div
+                        initial={{ opacity: 0, y: 50}}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        className="service-one-inner v2">
+                        {services.map((service, index) => (
+                            <div className="service-one-box" key={index}>
+                                <div className="service-one-icon-box">
+                                    <Image src={service.iconClass} width={80} height={80} alt="service images" />
+                                </div>
+                                <div className="service-one-info">
+                                    <h5 className="font-dm-sans text-uppercase text-white mb-2">{service.title}</h5>
+                                    <p className="text-white">{service.description}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <section className="capabilities-section bg-primary-dark">
                 <div className="container">
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left opacity-0">
+                                <div className="card-left">
                                     <div className="product-img my-5">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                        <video
+                                            width="1905" height="909"
+                                            className="w-100 h-100 rounded"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                        >
+                                            <source src="/img/tab-video.mp4" type="video/mp4" />
+                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -75,10 +150,21 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left opacity-0">
+                                <div className="card-left">
 
                                     <div className="product-img my-5 ">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                        <video
+                                            width="1905" height="909"
+                                            className="w-100 h-100 rounded"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                        >
+                                            <source src="/img/tab-video.mp4" type="video/mp4" />
+                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -118,10 +204,20 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left opacity-0">
-
+                                <div className="card-left">
                                     <div className="product-img my-5">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                        <video
+                                            width="1905" height="909"
+                                            className="w-100 h-100 rounded"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                        >
+                                            <source src="/img/tab-video.mp4" type="video/mp4" />
+                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -161,10 +257,20 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left opacity-0">
-
+                                <div className="card-left">
                                     <div className="product-img my-5">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                        <video
+                                            width="1905" height="909"
+                                            className="w-100 h-100 rounded"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                        >
+                                            <source src="/img/tab-video.mp4" type="video/mp4" />
+                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -204,9 +310,20 @@ export default function AboutUs() {
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left opacity-0">
+                                <div className="card-left">
                                     <div className="product-img my-5">
-                                        <Image src="/img/ship-img.webp" className="img-fluid" width="100" height="100" alt="" />
+                                        <video
+                                            width="1905" height="909"
+                                            className="w-100 h-100 rounded"
+                                            autoPlay
+                                            loop
+                                            muted
+                                            playsInline
+                                        >
+                                            <source src="/img/tab-video.mp4" type="video/mp4" />
+                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            Your browser does not support the video tag.
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +362,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </section>
-            <div className="about-four bg-primary pt-5 pb-0">
+            <div className="about-four bg-primary">
                 <video
                     width="1905" height="909"
                     className="w-100 h-100 background"
@@ -257,23 +374,68 @@ export default function AboutUs() {
                     <source src="/img/background.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="container pt-5">
-                    <div className="row gutter-y-60">
-                        <div className="col-lg-7 offset-lg-5">
-                            <div className="about-four-info bg-dark-v2 text-white px-5 py-5 rounded-top-2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-10 mx-auto">
+                            <motion.div
+                                initial={{ opacity: 0, x: -50}}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.5, ease: "easeIn" }}
+                                className="about-four-info bg-dark-v2 text-white px-4 py-4 px-lg-5 py-lg-5 rounded-top-2 d-block text-center">
                                 <div className="heading-box">
-                                    <h2 className="heading-title text-white wow fadeInUp animated animated">Mission Below the Surface</h2>
+                                    <p className="text-uppercase letter-spacing text-white">Strydent’s AUV</p>
+                                    <h2 className="text-white">Help us continue our mission</h2>
                                 </div>
-                                <div className="section-details">
-                                    <p className="text-white">Watch Strydent’s autonomous underwater fleet operate in real-time — navigating, analyzing, and executing with zero human input. Built for stealth. Designed for resilience. Powered by AI.</p>
+                                <div className="section-details mb-4 px-lg-5">
+                                    <p className="text-white">Strengthening our nation’s families through programs designed to encourage healing, reduce challenges, and overcome obstacles together.</p>
                                 </div>
-                                <a href="contact-us.html" className="btn btn-primary v2">Specifications <i className="flaticon-next"></i></a>
-                            </div>
+                                <a href="contact-us.html" className="btn btn-primary v2">Contact Us <i className="flaticon-next"></i></a>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Cta />
+            <section className="features-section-one">
+                <div className="container-fluid">
+                    <div className="row align-items-center justify-content-center justify-content-xl-start">
+                        <div className="col-lg-6">
+                            <div className="features-one-image">
+                                <Image src="/img/features-1.jpg" width="444" height="750" alt="features-image" />
+                                    <div className="image-shape">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="features-one-info">
+                                <div className="heading-box">
+                                    <span
+                                        className="heading-subtitle wow fadeInUp animated animated px-0 border-0 text-uppercase">About</span>
+                                    <h2 className="heading-title wow fadeInUp animated animated">Strydent’s AUV</h2>
+                                </div>
+                                <div className="features-one-list-block">
+                                    <h3>Initial Focus</h3>
+                                    <ul className="features-one-list">
+                                        <li className="w-100">Create solar cells that can recharge the Li-ion battery in a harsh ocean environment.</li>
+                                        <li className="w-100">Develop a generative AI Platform for navigation and multi-sensor, real-time data analysis.</li>
+                                        <li className="w-100">Develop a laser-based data transfer system (Utilize RF in the interim).</li>
+                                        <li className="w-100">Optimize in-situ communication among fleet of AUVs.</li>
+                                    </ul>
+                                </div>
+                                <div className="features-one-list-block">
+                                    <h3>Value Proposition</h3>
+                                    <ul className="features-one-list">
+                                        <li className="w-100">IPO or M&A after 4-5 years</li>
+                                        <li className="w-100">Following optimization of small swarm (20-50 AUVs)</li>
+                                        <li className="w-100">Average cost per AUV of approximately $500K</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </MainLayout>
     );
 }
