@@ -4,6 +4,7 @@ import MainLayout from "./../layouts/MainLayout";
 import Image from "next/image";
 import {motion} from "framer-motion";
 import Link from "next/link";
+import Cta from "../components/Cta";
 const services = [
     {
         title: "Strike Carrier Groups",
@@ -103,7 +104,7 @@ export default function Capabilities() {
                                      animate={{ opacity: 1, x: 0 }}
                                      transition={{ duration: 0.5, ease: "easeIn" }}
                                      className="card-left">
-                                    <div className="product-img my-5">
+                                    <div className="product-img mb-5">
                                         <video
                                             width="1905" height="909"
                                             className="w-100 h-100 rounded"
@@ -113,7 +114,7 @@ export default function Capabilities() {
                                             playsInline
                                         >
                                             <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            <source src="/img/tab-video.webm" type="video/webm" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -163,7 +164,7 @@ export default function Capabilities() {
                                      transition={{ duration: 0.5, ease: "easeIn" }}
                                      className="card-left">
 
-                                    <div className="product-img my-5 ">
+                                    <div className="product-img mb-5 ">
                                         <video
                                             width="1905" height="909"
                                             className="w-100 h-100 rounded"
@@ -173,7 +174,7 @@ export default function Capabilities() {
                                             playsInline
                                         >
                                             <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            <source src="/img/tab-video.webm" type="video/webm" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -222,7 +223,7 @@ export default function Capabilities() {
                                      animate={{ opacity: 1, x: 0 }}
                                      transition={{ duration: 0.5, ease: "easeIn" }}
                                      className="card-left">
-                                    <div className="product-img my-5">
+                                    <div className="product-img mb-5">
                                         <video
                                             width="1905" height="909"
                                             className="w-100 h-100 rounded"
@@ -232,7 +233,7 @@ export default function Capabilities() {
                                             playsInline
                                         >
                                             <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            <source src="/img/tab-video.webm" type="video/webm" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -281,7 +282,7 @@ export default function Capabilities() {
                                      animate={{ opacity: 1, x: 0 }}
                                      transition={{ duration: 0.5, ease: "easeIn" }}
                                      className="card-left">
-                                    <div className="product-img my-5">
+                                    <div className="product-img mb-5">
                                         <video
                                             width="1905" height="909"
                                             className="w-100 h-100 rounded"
@@ -291,7 +292,7 @@ export default function Capabilities() {
                                             playsInline
                                         >
                                             <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            <source src="/img/tab-video.webm" type="video/webm" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -340,7 +341,7 @@ export default function Capabilities() {
                                      animate={{ opacity: 1, x: 0 }}
                                      transition={{ duration: 0.5, ease: "easeIn" }}
                                      className="card-left">
-                                    <div className="product-img my-5">
+                                    <div className="product-img mb-5">
                                         <video
                                             width="1905" height="909"
                                             className="w-100 h-100 rounded"
@@ -350,7 +351,7 @@ export default function Capabilities() {
                                             playsInline
                                         >
                                             <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.mp4.webm" type="video/webm" />
+                                            <source src="/img/tab-video.webm" type="video/webm" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -466,6 +467,7 @@ export default function Capabilities() {
                     </div>
                 </div>
             </section>
+            <Cta />
         </MainLayout>
     );
 }
