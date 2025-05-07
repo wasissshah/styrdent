@@ -38,7 +38,7 @@ export default function Capabilities() {
                     <div className="banner-two-slider">
                         <div className="banner-two-slider-item" data-dot="Fast Approval">
                             <div className="container">
-                                <div
+                                <motion.div
                                     className="m-auto"
                                     initial={{ opacity: 0, y: 50}}
                                     animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Capabilities() {
                                             <Image src="/img/auv-3.png" className="obj" width="1000" height="524" alt="" />
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Capabilities() {
             </section>
             <section className="services-section-one py-5 bg-primary-dark">
                 <div className="container">
-                    <div
+                    <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}>
@@ -72,8 +72,8 @@ export default function Capabilities() {
                             <p className="text-uppercase letter-spacing text-primary">Capabilities</p>
                             <h2 className="heading-title text-uppercase fw-bolder text-white">Protecting & Supporting U.S Assets & National Interests</h2>
                         </div>
-                    </div>
-                    <div
+                    </motion.div>
+                    <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
@@ -89,7 +89,7 @@ export default function Capabilities() {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </section>
             <section className="capabilities-section bg-primary-dark">
