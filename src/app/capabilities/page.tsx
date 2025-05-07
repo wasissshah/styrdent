@@ -42,7 +42,7 @@ export default function Capabilities() {
                                     className="m-auto"
                                     initial={{ opacity: 0, y: 50}}
                                     animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                                    transition={{ duration: 0.5, ease: "easeIn" }}
                                 >
                                     <div className="banner-two-info text-center">
                                         <div className="section-details">
@@ -53,7 +53,9 @@ export default function Capabilities() {
                                                 <span className="small text-gradient">autonomy vehicle</span></h1>
                                         </div>
                                         <div className="img-wrapper">
-                                            <Image src="/img/auv-3.png" className="obj" width="1000" height="524" alt="" />
+                                            <Image src="/img/obj-slider1.png" className="obj" width="1000" height="524" alt="" />
+                                            <Image src="/img/obj-slider2.png" className="obj" width="1000" height="524" alt="" />
+                                            <Image src="/img/obj-slider3.png" className="obj" width="1000" height="524" alt="" />
                                         </div>
                                     </div>
                                 </motion.div>
@@ -62,12 +64,12 @@ export default function Capabilities() {
                     </div>
                 </div>
             </section>
-            <section className="services-section-one py-5 bg-primary-dark">
+            <section className="services-section-one pt-0 bg-primary-dark">
                 <div className="container">
                     <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}>
+                        transition={{ duration: 0.5, ease: "easeIn" }}>
                         <div className="heading-box text-center col-lg-10 mx-auto">
                             <p className="text-uppercase letter-spacing text-primary">Capabilities</p>
                             <h2 className="heading-title text-uppercase fw-bolder text-white">Protecting & Supporting U.S Assets & National Interests</h2>
@@ -76,7 +78,7 @@ export default function Capabilities() {
                     <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        transition={{ duration: 0.5, ease: "easeIn" }}
                         className="service-one-inner v2">
                         {services.map((service, index) => (
                             <div className="service-one-box" key={index}>
@@ -97,7 +99,10 @@ export default function Capabilities() {
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left">
+                                <motion.div initial={{ opacity: 0, x: 50}}
+                                     animate={{ opacity: 1, x: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-left">
                                     <div className="product-img my-5">
                                         <video
                                             width="1905" height="909"
@@ -112,10 +117,13 @@ export default function Capabilities() {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-right">
+                                <motion.div initial={{ opacity: 0, y: 50}}
+                                     animate={{ opacity: 1, y: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-right">
                                     <h3 className="mb-0 text-white">Autonomous Navigation</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -143,14 +151,17 @@ export default function Capabilities() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left">
+                                <motion.div initial={{ opacity: 0, x: 50}}
+                                     animate={{ opacity: 1, x: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-left">
 
                                     <div className="product-img my-5 ">
                                         <video
@@ -166,10 +177,13 @@ export default function Capabilities() {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-right">
+                                <motion.div initial={{ opacity: 0, y: 50}}
+                                     animate={{ opacity: 1, y: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-right">
                                     <h3 className="mb-0 text-white">Fleet Coordination (Swarm Intelligence)</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -197,14 +211,17 @@ export default function Capabilities() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left">
+                                <motion.div initial={{ opacity: 0, x: 50}}
+                                     animate={{ opacity: 1, x: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-left">
                                     <div className="product-img my-5">
                                         <video
                                             width="1905" height="909"
@@ -219,10 +236,13 @@ export default function Capabilities() {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-right">
+                                <motion.div initial={{ opacity: 0, y: 50}}
+                                     animate={{ opacity: 1, y: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-right">
                                     <h3 className="mb-0 text-white">Multi-Sensor Data Collection</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -250,14 +270,17 @@ export default function Capabilities() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
                     <div className="capabilities-card">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="card-left">
+                                <motion.div initial={{ opacity: 0, x: 50}}
+                                     animate={{ opacity: 1, x: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-left">
                                     <div className="product-img my-5">
                                         <video
                                             width="1905" height="909"
@@ -272,10 +295,13 @@ export default function Capabilities() {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-right">
+                                <motion.div initial={{ opacity: 0, y: 50}}
+                                     animate={{ opacity: 1, y: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-right">
                                     <h3 className="mb-0 text-white">Solar-Powered Energy System</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -303,14 +329,17 @@ export default function Capabilities() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
                     <div className="capabilities-card">
                         <div className="row flex-row-reverse">
                             <div className="col-lg-6">
-                                <div className="card-left">
+                                <motion.div initial={{ opacity: 0, x: 50}}
+                                     animate={{ opacity: 1, x: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-left">
                                     <div className="product-img my-5">
                                         <video
                                             width="1905" height="909"
@@ -325,10 +354,13 @@ export default function Capabilities() {
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                             <div className="col-lg-6">
-                                <div className="card-right">
+                                <motion.div initial={{ opacity: 0, y: 50}}
+                                     animate={{ opacity: 1, y: 0 }}
+                                     transition={{ duration: 0.5, ease: "easeIn" }}
+                                     className="card-right">
                                     <h3 className="mb-0 text-white">Secure Encrypted Communication</h3>
                                     <div className="text-white my-3">Description</div>
                                     <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
@@ -356,7 +388,7 @@ export default function Capabilities() {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>
@@ -410,8 +442,6 @@ export default function Capabilities() {
                         <div className="col-lg-6">
                             <div className="features-one-info">
                                 <div className="heading-box">
-                                    <span
-                                        className="heading-subtitle wow fadeInUp animated animated px-0 border-0 text-uppercase">About</span>
                                     <h2 className="heading-title wow fadeInUp animated animated">Strydent’s AUV</h2>
                                 </div>
                                 <div className="features-one-list-block">

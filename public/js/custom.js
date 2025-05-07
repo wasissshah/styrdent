@@ -93,6 +93,20 @@
             slidesToScroll: 1
         })
     }
+    if ($('.img-wrapper').length) {
+        // banner-one slider
+        $('.img-wrapper').slick({
+            dots: false,
+            infinite: true,
+            speed: 200,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 1,
+            fade: true,
+            arrows: false,
+            slidesToScroll: 1
+        })
+    }
     if ($('#team-slider').length) {
         $('#team-slider').slick({
             speed: 500,
