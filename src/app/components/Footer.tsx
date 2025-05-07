@@ -26,7 +26,7 @@ export default function Footer() {
                                             <div className="col-lg-6">
                                                 <ul>
                                                     <li><Link href="/">Home</Link></li>
-                                                    <li><Link href="/">Capabilities</Link></li>
+                                                    <li><Link href="/capabilities">Capabilities</Link></li>
                                                     <li><Link href="/mission">Mission</Link></li>
                                                     <li><Link href="/team">Team</Link></li>
                                                 </ul>
@@ -90,7 +90,7 @@ export default function Footer() {
                     <div className="mobile-nav-container">
                         <ul className="mobile-menu-list">
                             <li className="menu-item-has-children"><Link href="/">Home</Link></li>
-                            <li className="menu-item-has-children"><Link href="/">Capabilities</Link></li>
+                            <li className="menu-item-has-children"><Link href="/capabilities">Capabilities</Link></li>
                             <li className="menu-item-has-children"><Link href="/mission">Mission</Link></li>
                             <li className="menu-item-has-children"><Link href="/team">Team</Link></li>
                             <li className="menu-item-has-children"><Link href="/blog">Blog</Link></li>

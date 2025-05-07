@@ -72,7 +72,7 @@ export default function Home() {
                                 <div className="section-details mb-4">
                                     <p className="text-white">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
-                                <a href="contact-us.html" className="btn btn-primary v2">Capabilities <i className="flaticon-next"></i></a>
+                                <a href="/capabilities" className="btn btn-primary v2">Capabilities <i className="flaticon-next"></i></a>
                             </motion.div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@ export default function Home() {
                                 <div className="section-details mb-4">
                                     <p className="text-white text-center">The Strydent’s AUV has a flexible & unique architecture capable of rapid integration of complex payloads or multi-sensor suites. It is ideal for a variety of missions such as undersea battlespace intelligence, surveillance and reconnaissance, mine counter-warfare, anti-submarine warfare, seafloor mapping and more.</p>
                                 </div>
-                                <a href="contact-us.html" className="btn btn-primary v2">view more <i className="flaticon-next"></i></a>
+                                <a href="/team" className="btn btn-primary v2">view more <i className="flaticon-next"></i></a>
                             </motion.div>
                         </div>
                     </div>
