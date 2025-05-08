@@ -428,7 +428,7 @@ export default function Capabilities() {
                     </div>
                 </div>
             </div>
-            <section className="features-section-one">
+            <section className="features-section-one d-none">
                 <div className="container-fluid">
                     <div className="row align-items-center justify-content-center justify-content-xl-start">
                         <div className="col-lg-6">
