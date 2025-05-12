@@ -25,7 +25,7 @@
 * case
 * team 
 * testimonial
-* blog
+* news
 * cta
 * inquiry
 * footer
@@ -4550,7 +4550,7 @@ ul.why-choose-three-counter {
 }
 
 /***********************
- * blog one
+ * news one
 ***********************/
 
 .blog-one {
@@ -4724,7 +4724,7 @@ ul.why-choose-three-counter {
 }
 
 /***********************
- * blog two
+ * news two
 ***********************/
 
 .blog-two {
@@ -4845,7 +4845,7 @@ ul.why-choose-three-counter {
 }
 
 /***********************
- * blog three
+ * news three
 ***********************/
 
 .blog-three {
@@ -6116,7 +6116,7 @@ ul.client-list li {
 }
 
 /***********************
- * blog Standard page
+ * news Standard page
 ***********************/
 
 .blog-list-section {
@@ -6435,7 +6435,7 @@ ul.pagination li a:hover {
 }
 
 /***********************
- * blog grid page
+ * news grid page
 ***********************/
 
 .blog-list-item-two {
@@ -6485,7 +6485,7 @@ ul.pagination li a:hover {
 }
 
 /***********************
- * blog single page
+ * news single page
 ***********************/
 
 .single-blog-details h3 {

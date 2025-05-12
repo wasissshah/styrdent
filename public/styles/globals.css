@@ -174,8 +174,8 @@ section {
   font-weight: 900 !important;
 }
 .banner-two.v2 .banner-title h1 .small {
-  font-size: 110px;
-  line-height: 120px;
+  font-size: 90px;
+  line-height: 100px;
 }
 .banner-two.v2 .banner-title h1 .text-gradient {
   background: -webkit-linear-gradient(#fff, var(--primary-dark));
@@ -477,8 +477,8 @@ ul#services-tab .nav-link span {
     padding: 110px 0 120px;
   }
   .banner-two.v2 .banner-title h1 .small {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 65px;
+    line-height: 70px;
   }
   .banner-two.v2 .img-wrapper:after {
     width: 500px;

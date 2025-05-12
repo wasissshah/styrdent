@@ -50,8 +50,8 @@ export default function Capabilities() {
                                             <p className="text-uppercase letter-spacing text-primary">Strydent Autonomous Technologies</p>
                                         </div>
                                         <div className="banner-title">
-                                            <h1 className="fw-bolder"><span className="small">underwater</span><br/>
-                                                <span className="small text-gradient">autonomy vehicle</span></h1>
+                                            <h1 className="fw-bolder"><span className="small">Autonomous</span><br/>
+                                                <span className="small text-gradient">Underwater Vehicles</span></h1>
                                         </div>
                                         <div className="img-wrapper">
                                             <Image src="/img/obj-slider1.png" className="obj" width="1000" height="524" alt="" />

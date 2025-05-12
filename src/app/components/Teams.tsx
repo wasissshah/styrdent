@@ -10,9 +10,7 @@ const teamMembers = [
     { name: "Johne Shire", role: "J.D", image: "/img/team/team-3.jpg" },
     { name: "William Poster", role: "Former Chairman", image: "/img/team/team-1.jpg" },
     { name: "Mike Smith", role: "President & CEO", image: "/img/team/team-3.jpg" },
-    { name: "Michael Golda", role: "Ph.D.", image: "/img/team/team-1.jpg" },
     { name: "Frank Gerace", role: "Former Division Quality", image: "/img/team/team-3.jpg" },
-    { name: "Michael Gilday", role: "Former Chief of Naval", image: "/img/team/team-1.jpg" },
 ];
 
 export default function TeamPage() {

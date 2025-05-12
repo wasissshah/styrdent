@@ -33,9 +33,8 @@ export default function Footer() {
                                             </div>
                                             <div className="col-lg-6">
                                                 <ul>
-                                                    <li><Link href="/blog">Blog</Link></li>
+                                                    <li><Link href="/news">News</Link></li>
                                                     <li><Link href="/contact-us">Contact</Link></li>
-                                                    <li><Link href="/faq">Faq</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -46,7 +45,7 @@ export default function Footer() {
                                         <p className="letter-spacing text-uppercase text-white">Contact us</p>
                                         <ul>
                                             <li><Link href="mailto:Loanlift@gmail.com"><i
-                                                className="flaticon-envelope"></i>info@strydent.com</Link></li>
+                                                className="flaticon-envelope"></i>info@strydentdefense.com</Link></li>
                                             <li><Link href="tel:(555) 123-4567"><i className="flaticon-phone"></i>+1
                                                 (555) 123-4567</Link></li>
                                         </ul>
@@ -93,9 +92,8 @@ export default function Footer() {
                             <li className="menu-item-has-children"><Link href="/capabilities">Capabilities</Link></li>
                             <li className="menu-item-has-children"><Link href="/mission">Mission</Link></li>
                             <li className="menu-item-has-children"><Link href="/team">Team</Link></li>
-                            <li className="menu-item-has-children"><Link href="/blog">Blog</Link></li>
+                            <li className="menu-item-has-children"><Link href="/news">News</Link></li>
                             <li className="menu-item-has-children"><Link href="/contact-us">Contact</Link></li>
-                            <li className="menu-item-has-children"><Link href="/faq">Faq</Link></li>
                         </ul>
                     </div>
                 </div>

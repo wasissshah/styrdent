@@ -44,7 +44,7 @@ export default function ContactForm() {
                                     <p className="text-white mb-0 letter-spacing text-uppercase">Phone</p>
                                     <a href="tel:+1 (555) 123-4567" className="menu-phone"> <i className="flaticon-phone"></i>+1 (555) 123-4567</a>
                                     <p className="text-white mb-0 letter-spacing text-uppercase">Email</p>
-                                    <a href="mailto:info@strydent.com" className="menu-phone"> <i className="flaticon-phone"></i>info@strydent.com</a>
+                                    <a href="mailto:info@strydent.com" className="menu-phone"> <i className="flaticon-phone"></i>info@strydentdefense.com</a>
                                 </div>
                                 <p className="text-white mb-0 letter-spacing text-uppercase">Social media</p>
                                 <ul className="contact-social-media">

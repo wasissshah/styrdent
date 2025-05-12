@@ -19,11 +19,11 @@ export default function ContactUs() {
     return (
         <MainLayout>
             <PageBanner
-                title="Blog"
+                title="News"
                 backgroundImage="/img/footer-bg.jpg"
                 breadcrumb={[
                     { label: "Home", href: "/" },
-                    { label: "Blog", href: "/blog" },
+                    { label: "News", href: "/news" },
                 ]}
             />
             <div className="blog-list-section">
