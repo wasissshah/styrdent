@@ -209,7 +209,7 @@ export default function ContactUs() {
                                     </div>
                                     <div className="comment-form-group-one">
                                         <label><i className="fa-solid fa-message"></i></label>
-                                        <textarea name="comment" rows="4" className="form-control"
+                                        <textarea name="comment" className="form-control"
                                                   placeholder="Comments"></textarea>
                                     </div>
                                     <button type="submit" className="btn btn-secondary">Leave A comment<i
