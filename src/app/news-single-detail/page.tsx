@@ -195,24 +195,22 @@ export default function ContactUs() {
                                     <div className="comment-form-group-one">
                                         <div className="comment-form-group-one-inner">
                                             <label><i className="fa-regular fa-user"></i></label>
-                                            <input type="text" className="form-control" placeholder="Full Name"
-                                                   required="" />
+                                            <input type="text" className="form-control" placeholder="Full Name"/>
                                         </div>
                                         <div className="comment-form-group-one-inner">
                                             <label><i className="fa-solid fa-phone"></i></label>
-                                            <input type="number" className="form-control" placeholder="Phone"
-                                                   required="" />
+                                            <input type="number" className="form-control" placeholder="Phone"/>
                                         </div>
                                     </div>
                                     <div className="comment-form-group-one">
                                         <label><i className="fa-regular fa-envelope"></i></label>
                                         <input type="email" name="email" className="form-control"
-                                               placeholder="Email Address" required="" />
+                                               placeholder="Email Address" />
                                     </div>
                                     <div className="comment-form-group-one">
                                         <label><i className="fa-solid fa-message"></i></label>
                                         <textarea name="comment" rows="4" className="form-control"
-                                                  placeholder="Comments" required=""></textarea>
+                                                  placeholder="Comments"></textarea>
                                     </div>
                                     <button type="submit" className="btn btn-secondary">Leave A comment<i
                                         className="flaticon-next"></i></button>
