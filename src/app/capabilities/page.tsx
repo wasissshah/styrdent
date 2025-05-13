@@ -54,7 +54,7 @@ export default function Capabilities() {
                                                 <span className="small text-gradient">Underwater Vehicles</span></h1>
                                         </div>
                                         <div className="img-wrapper">
-                                            <Image src="/img/obj-slider1.png" className="obj" width="1000" height="524" alt="" />
+                                            <Image src="/img/obj-slider1-1.png" className="obj" width="1000" height="524" alt="" />
                                             <Image src="/img/obj-slider2.png" className="obj" width="1000" height="524" alt="" />
                                             <Image src="/img/obj-slider3.png" className="obj" width="1000" height="524" alt="" />
                                         </div>
