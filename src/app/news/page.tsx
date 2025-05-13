@@ -33,7 +33,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-1.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -41,9 +41,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 06 Sup 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">The Benefits of Quick Loan Approvals for Small
+                                        <h5><a href="/news-single-detail">The Benefits of Quick Loan Approvals for Small
                                             Businesses</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-2.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -61,9 +61,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 15 Aug 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">Innovative Financing Solutions for Modern
+                                        <h5><a href="/news-single-detail">Innovative Financing Solutions for Modern
                                             Startups</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-3.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -81,9 +81,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 20 Jun 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">Key Financial Metrics Lenders Look for in Your
+                                        <h5><a href="/news-single-detail">Key Financial Metrics Lenders Look for in Your
                                             Loan Application</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-4.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -101,9 +101,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 10 May 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">Key Financial Metrics Lenders Look for in Your
+                                        <h5><a href="/news-single-detail">Key Financial Metrics Lenders Look for in Your
                                             Loan Application</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"><i
+                                        <a href="/news-single-detail" className="btn-link-two"><i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-5.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -121,9 +121,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 29 Sup 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">Key Financial Metrics Lenders Look for in Your
+                                        <h5><a href="/news-single-detail">Key Financial Metrics Lenders Look for in Your
                                             Loan Application</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-6.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -141,9 +141,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 25 Dec 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">The Impact of Credit Scores on Your Loan
+                                        <h5><a href="/news-single-detail">The Impact of Credit Scores on Your Loan
                                             Application</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -153,7 +153,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-7.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -161,9 +161,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 05 Jan 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">Key Financial Metrics Lenders Look for in Your
+                                        <h5><a href="/news-single-detail">Key Financial Metrics Lenders Look for in Your
                                             Loan Application</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"><i
+                                        <a href="/news-single-detail" className="btn-link-two"><i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-8.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -181,9 +181,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 29 Sup 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">How loanlift Supports Business Growth Through
+                                        <h5><a href="/news-single-detail">How loanlift Supports Business Growth Through
                                             Tailored Loans</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"> <i
+                                        <a href="/news-single-detail" className="btn-link-two"> <i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@ export default function ContactUs() {
                             <div className="blog-block">
                                 <div className="blog-list-item-two">
                                     <div className="blog-image">
-                                        <a href="blog-details.html">
+                                        <a href="/news-single-detail">
                                             <Image src="/img/blog/blog-grid-2-imag-9.jpg" className="img-fluid" width="416" height="335" alt="blog-image" /></a>
                                     </div>
                                     <div className="blog-item-meta">
@@ -201,9 +201,9 @@ export default function ContactUs() {
                                         <p><a href="#">On 25 Dec 2024</a></p>
                                     </div>
                                     <div className="blog-item-details">
-                                        <h5><a href="blog-details.html">The Role of Collateral in Securing a Business
+                                        <h5><a href="/news-single-detail">The Role of Collateral in Securing a Business
                                             Loan</a></h5>
-                                        <a href="blog-details.html" className="btn-link-two"><i
+                                        <a href="/news-single-detail" className="btn-link-two"><i
                                             className="flaticon-next"></i></a>
                                     </div>
                                 </div>

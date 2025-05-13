@@ -1010,12 +1010,12 @@ if ($('#loan-chart').length) {
 if ($('.cta-two').length) {
     let hasMoved = false;
     // cta text scroll efect
+    if ($('.cta-two-box-one').length) {
     $(window).on('scroll', function() {
 
         var scrollTop = $(this).scrollTop();
         var windowHeight = $(window).height();
-        // var elementOffset = $('.cta-two-box-one').offset().top;
-        var elementOffset = $('body');
+        var elementOffset = $('.cta-two-box-one').offset().top;
 
         var distanceFromTop = elementOffset - scrollTop;
 
@@ -1034,8 +1034,7 @@ if ($('.cta-two').length) {
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop();
         var windowHeight = $(window).height();
-        // var elementOffset = $('.cta-two-box-two').offset().top;
-        var elementOffset = $('.body');
+        var elementOffset = $('.cta-two-box-two').offset().top;
 
         var distanceFromTop = elementOffset - scrollTop;
 
@@ -1050,4 +1049,5 @@ if ($('.cta-two').length) {
             $('.cta-two-box-two').css('transform', 'translate(' + -translateValue + 'px, 0px)');
         }
     });
+    }
 }
