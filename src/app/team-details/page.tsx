@@ -12,6 +12,7 @@ function TeamDetailContent() {
     const name = searchParams.get("name");
     const role = searchParams.get("role");
     const image = searchParams.get("image");
+    const text = searchParams.get("text");
 
     return (
         <>
@@ -19,9 +20,7 @@ function TeamDetailContent() {
                 title={name || "Team Member"}
                 backgroundImage="/img/footer-bg.jpg"
                 breadcrumb={[
-                    { label: "Home", href: "/" },
-                    { label: "Team", href: "/team" },
-                    { label: name || "Details", href: "#" },
+                    { label: role || "Details", href: "#" },
                 ]}
             />
 
@@ -44,7 +43,6 @@ function TeamDetailContent() {
                                     </div>
                                 </div>
                                 <div className="team-social-media">
-                                    <h3>{role || "Specialist"}</h3>
                                     <ul>
                                         <li>
                                             <h4>Email Address</h4>
@@ -66,36 +64,8 @@ function TeamDetailContent() {
                         <div className="col-lg-8">
                             <div className="team-details-block">
                                 <p>
-                                    {name} brings deep expertise to our organization, with a focus on innovation, leadership, and impact.
-                                    Known for their strategic thinking and commitment to excellence, they play a vital role in our
-                                    mission-driven approach.
+                                    {text}
                                 </p>
-                            </div>
-
-                            <div className="team-details-block">
-                                <h4>Career</h4>
-                                <p>
-                                    Their career path includes leadership positions in mission-critical industries, where they’ve
-                                    influenced teams and delivered exceptional results.
-                                </p>
-                            </div>
-
-                            <div className="team-details-block">
-                                <h4>Work Experience</h4>
-                                <ul className="team-details-list">
-                                    <li>Senior Executive | DefenseCorp</li>
-                                    <li>AI Strategist | NextGen Robotics</li>
-                                    <li>Technical Director | DeepSea Systems</li>
-                                </ul>
-                            </div>
-
-                            <div className="team-details-block">
-                                <h4>Achievements</h4>
-                                <ul className="team-details-list">
-                                    <li>Developed key AUV AI algorithms used in real-world operations</li>
-                                    <li>Led successful missions across strategic underwater domains</li>
-                                    <li>Awarded for innovation in autonomous systems</li>
-                                </ul>
                             </div>
                         </div>
                     </div>

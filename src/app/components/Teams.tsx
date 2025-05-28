@@ -6,11 +6,14 @@ import Image from "next/image";
 import {usePathname} from "next/navigation";
 
 const teamMembers = [
-    { name: "Dean L. Fanelli", role: "Ph.D, J.D", image: "/img/team/team-1.jpg" },
-    { name: "Johne Shire", role: "J.D", image: "/img/team/team-3.jpg" },
-    { name: "William Poster", role: "Former Chairman", image: "/img/team/team-1.jpg" },
-    { name: "Mike Smith", role: "President & CEO", image: "/img/team/team-3.jpg" },
-    { name: "Frank Gerace", role: "Former Division Quality", image: "/img/team/team-3.jpg" },
+    { name: "William Poster", role: "Chairman, Board of Directors, Strydent Autonomous Technologies", image: "/img/william-poster.jpg", text: "William Poster is Chair of the Board of Directors of Strydent Autonomous Technologies, Inc.  Mr. Poster is a seasoned business executive and entrepreneur with an outstanding track record of creating, growing, and harvesting business opportunities. The breadth of his capabilities is evidenced by his creation of successful businesses throughout the world. His accomplishments include being the Founder, Chairman, CEO and sole shareholder of multiple companies spanning five continents and over 50 countries. He is known publicly as the former President of General Dynamics-CSCC, a leading edge international communications and technology company that he founded and sold to General Dynamics Corporation (NYSE: GD). In addition to serving on numerous corporate boards, his less public endeavors include projects related to real estate, defense, education, energy, microfinance, and sports, media, music & entertainment. During Mr. Poster's career he has skillfully applied his international expertise on both business and political levels. His extensive knowledge of the international technology, defense and communications marketplace was acquired through direct negotiation and construction of sophisticated military and commercial systems for both business and governments in Europe, Asia, Africa, and the Middle East. He has also been successful, as both a principal and a general partner, in creating and developing large-scale real estate and investment projects in the U.S. and abroad. Mr. Poster's educational background includes a business degree and a law degree from The University of Michigan and The George Washington University, respectively. He has been  a member of the District of Columbia Bar Association, The Army Navy Club and numerous other professional, civic and social organizations. Other former noteworthy positions include Founder and Director of SECAF, Founder and Managing Partner of The Eagle Rock Group, as well as staff level positions at The United States Securities & Exchange Commission, The United States Small Business Administration, Mitsui Bank Limited, NY, et. al." },
+    { name: "Dean L. Fanelli", role: "Ph.D., Chief Executive Officer and President, Strydent Autonomous Technologies", image: "/img/dean-l-fanelli.jpg", text: "" },
+    { name: "John P. Shire", role: "J.D., Chief Operating Officer, Strydent Autonomous Technologies", image: "/img/john-p.jpg", text: "" },
+    { name: "Mike Smith", role: "Board of Advisors Member, Strydent Autonomous Technologies", image: "/img/mike-smith.jpg", text: "" },
+    { name: "Frank Gerace", role: "Director of Engineering, Board of Advisors Member, Strydent Autonomous Technologies", image: "/img/team/team-3.jpg", text: "" },
+    { name: "Admiral Michael Jabaley Ret.", role: "Board of Advisors Member, Strydent Autonomous Technologies", image: "/img/admiral-michael-jabaley-ret.jpg", text: "" },
+    { name: "Nickolas Guertin", role: "Board of Advisors Member, Strydent Autonomous Technologies", image: "/img/nickolas-guertin.jpg", text: "" },
+    { name: "Thomas Reynolds", role: "Board of Advisors Member, Strydent Autonomous Technologies", image: "/img/thomas-reynolds.jpg", text: "" },
 ];
 
 export default function TeamPage() {
@@ -45,6 +48,7 @@ export default function TeamPage() {
                                             name: member.name,
                                             role: member.role,
                                             image: member.image,
+                                            text: member.text,
                                         },
                                     }}
                                 >
