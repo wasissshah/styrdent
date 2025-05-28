@@ -63,9 +63,7 @@ function TeamDetailContent() {
 
                         <div className="col-lg-8">
                             <div className="team-details-block">
-                                <p>
-                                    {text}
-                                </p>
+                                <div dangerouslySetInnerHTML={{ __html: text || "" }} />
                             </div>
                         </div>
                     </div>
