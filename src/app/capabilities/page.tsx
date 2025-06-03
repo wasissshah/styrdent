@@ -55,7 +55,7 @@ export default function Capabilities() {
                                         </div>
                                         <div className="img-wrapper">
                                             <Image src="/img/obj-slider1-1.png" className="obj" width="1000" height="524" alt="" />
-                                            <Image src="/img/obj-slider2.png" className="obj" width="1000" height="524" alt="" />
+                                            <Image src="/img/obj-slider2-2.png" className="obj" width="1000" height="524" alt="" />
                                             <Image src="/img/obj-slider3.png" className="obj" width="1000" height="524" alt="" />
                                         </div>
                                     </div>
@@ -127,9 +127,9 @@ export default function Capabilities() {
                                      className="card-right">
                                     <h3 className="mb-0 text-white">Autonomous Navigation</h3>
                                     <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                                    <div className="text-white my-3">Specifications</div>
-                                    <div className="row g-0">
+                                    <div className="text">Strydent’s proprietary autonomous navigation system enables its swarms of AUVs to autonomously navigate both near-shore coastal areas and open seas offering enhanced operational performance and capabilities through its suite of onboard sensors.  Strydent’s proprietary swarm navigation technology allows its fleet of undersea AUVs to provide safe navigation while ensuring constant communication among all of the AUVs in the swarm without intervention from remote operators and allowing real-time data communication.  The onboard control system links each of the AUVs and manages all operational aspects, from navigation to system diagnostics allowing the AUVs to operate with precision and efficiency.  Strydent’s AUVs can be equipped with an inertial navigation system or a global navigation system and a Doppler velocity log and depth sensor.</div>
+                                    <div className="text-white my-3 d-none">Specifications</div>
+                                    <div className="row g-0 d-none">
                                         <div className="col-lg-4">
                                             <div className="option">
                                                 <div className="dot"></div>
@@ -187,28 +187,28 @@ export default function Capabilities() {
                                      className="card-right">
                                     <h3 className="mb-0 text-white">Fleet Coordination (Swarm Intelligence)</h3>
                                     <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                    <div className="text">Strydent’s AUV swarms communicate and cooperate with one another in a coordinated manner providing real-time dynamic communication with minimal operator intervention.  Strydent’s AUV swarms can communicate with each other at distances of up to 5 kilometers.  Strydent’s communication technology allows real-time data sharing and communication among AUVs within a swarm to achieve complex and flexible mission execution, enabling the swarm to adapt to changing situations and respond to unexpected events.  Strydent’s AUVs are attritable ensuring mission competency if one or more AUVs are offline.</div>
                                     <div className="text-white my-3">Specifications</div>
                                     <div className="row g-0">
                                         <div className="col-lg-4">
                                             <div className="option">
                                                 <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
+                                                {/*<h3 className="text-white mb-0">30 nm</h3>*/}
+                                                <div className="text-white">Maximum range of 5km between AUVs  </div>
                                             </div>
                                         </div>
                                         <div className="col-lg-4">
                                             <div className="option">
                                                 <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
+                                                {/*<h3 className="text-white mb-0">30 nm</h3>*/}
+                                                <div className="text-white">Real-time data sharing and communication</div>
                                             </div>
                                         </div>
                                         <div className="col-lg-4">
                                             <div className="option last">
                                                 <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
+                                                {/*<h3 className="text-white mb-0">30 nm</h3>*/}
+                                                <div className="text-white">Attritable ensuring mission competency</div>
                                             </div>
                                         </div>
                                     </div>
@@ -246,30 +246,30 @@ export default function Capabilities() {
                                      className="card-right">
                                     <h3 className="mb-0 text-white">Multi-Sensor Data Collection</h3>
                                     <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                    <div className="text">Each of Strydent’s AUVs is equipped with a suite of sensors, which are modifiable depending on mission and client objectives.  Strydent’s AUV can be equipped to include a sensor package including: a low-power laser-based LiDAR system, side-scan sonar, camera, GPS, depth sensor. The sensor package may optionally contain other mission specific sensors, such as: a fluorometer, magnetometer, sub-bottom profiler, and various chemical sensors.</div>
                                     <div className="text-white my-3">Specifications</div>
                                     <div className="row g-0">
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-5">
                                             <div className="option">
                                                 <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
+                                                {/*<h3 className="text-white mb-0">30 nm</h3>*/}
+                                                <div className="text-white">Suite of modifiable <br/>sensors.</div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4">
-                                            <div className="option">
-                                                <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-7">
                                             <div className="option last">
                                                 <div className="dot"></div>
-                                                <h3 className="text-white mb-0">30 nm</h3>
-                                                <div className="text-white">Range</div>
+                                                {/*<h3 className="text-white mb-0">30 nm</h3>*/}
+                                                <div className="text-white">Customizable depending on mission objectives</div>
                                             </div>
                                         </div>
+                                        {/*<div className="col-lg-4">*/}
+                                        {/*    <div className="option last">*/}
+                                        {/*        <div className="dot"></div>*/}
+                                        {/*        <h3 className="text-white mb-0">30 nm</h3>*/}
+                                        {/*        <div className="text-white">Range</div>*/}
+                                        {/*    </div>*/}
+                                        {/*</div>*/}
                                     </div>
                                 </motion.div>
                             </div>
@@ -305,9 +305,9 @@ export default function Capabilities() {
                                      className="card-right">
                                     <h3 className="mb-0 text-white">Solar-Powered Energy System</h3>
                                     <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                                    <div className="text-white my-3">Specifications</div>
-                                    <div className="row g-0">
+                                    <div className="text">Strydent’s AUVs are equipped with a rechargeable Lithing-ion battery.  Strydent’s AUVs optionally include solar panels to allow continuous operation and in-situ recharging of Li-ion battery.</div>
+                                    <div className="text-white my-3 d-none">Specifications</div>
+                                    <div className="row g-0 d-none">
                                         <div className="col-lg-4">
                                             <div className="option">
                                                 <div className="dot"></div>
@@ -364,9 +364,9 @@ export default function Capabilities() {
                                      className="card-right">
                                     <h3 className="mb-0 text-white">Secure Encrypted Communication</h3>
                                     <div className="text-white my-3">Description</div>
-                                    <div className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-                                    <div className="text-white my-3">Specifications</div>
-                                    <div className="row g-0">
+                                    <div className="text">Strydent’s AUVs provide real-time data collection and communication providing accurate and instant data transmission.  Each of Strydent’s AUVs is equipped an acoustic sensor providing high speed data transmission with low latency and minimal distortion.  Working in a swarm Strydent’s AUVs can communicate with one another collectively in a secure manner and transmit data to provide real-time decision-making.</div>
+                                    <div className="text-white my-3 d-none">Specifications</div>
+                                    <div className="row g-0 d-none">
                                         <div className="col-lg-4">
                                             <div className="option">
                                                 <div className="dot"></div>
@@ -422,7 +422,7 @@ export default function Capabilities() {
                                 <div className="section-details mb-4 px-lg-5">
                                     <p className="text-white">Strengthening our nation’s families through programs designed to encourage healing, reduce challenges, and overcome obstacles together.</p>
                                 </div>
-                                <a href="contact-us.html" className="btn btn-primary v2">Contact Us <i className="flaticon-next"></i></a>
+                                <Link href="/contact-us" className="btn btn-primary v2">Contact Us <i className="flaticon-next"></i></Link>
                             </motion.div>
                         </div>
                     </div>
