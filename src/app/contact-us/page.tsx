@@ -1,3 +1,5 @@
+"use client";
+
 import MainLayout from "./../layouts/MainLayout";
 import Hero from "./../components/Hero";
 import Services from "./../components/Services";

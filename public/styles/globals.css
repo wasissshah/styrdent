@@ -1,8 +1,8 @@
 :root {
   --white: #fff;
   --black: #000;
-  --primary: #4297F3;
-  --primary-dark: #1D232F;
+  --primary: #4297f3;
+  --primary-dark: #1d232f;
 }
 
 .btn {
@@ -43,7 +43,7 @@
 }
 
 .bg-primary-dark {
-  background: #171D28 !important;
+  background: #171d28 !important;
 }
 
 .font-play,
@@ -80,7 +80,12 @@
   letter-spacing: 0.3rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif !important;
   text-transform: uppercase;
   font-weight: 700;
@@ -144,12 +149,13 @@ section {
 .banner-one video,
 .banner-two video {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .banner-two.v2 {
   min-height: 100vh;
-  background: #171D28;
+  background: #171d28;
   position: relative;
   z-index: 2;
 }
@@ -225,7 +231,8 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 0;
 }
 .about-four .bg-overlay {
@@ -241,8 +248,10 @@ section {
 .capabilities-video {
   width: 100%;
   height: 600px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .services-section-one .service-one-icon-box img {
@@ -283,8 +292,10 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   opacity: 0.1;
 }
 .why-choose-section-one .container {
@@ -385,7 +396,8 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .team .container {
   position: relative;
@@ -668,5 +680,28 @@ ul#services-tab .nav-link span {
     margin-right: 0;
   }
 }
-
-/*# sourceMappingURL=globals.css.map */
+.form-status {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+.form-status.info {
+  color: #2c2c2c;
+}
+.form-status.success {
+  color: #28a745;
+  /* Bootstrap green */
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.form-status.error {
+  color: #dc3545;
+  /* Bootstrap red */
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 8px 12px;
+  border-radius: 4px;
+}/*# sourceMappingURL=globals.css.map */

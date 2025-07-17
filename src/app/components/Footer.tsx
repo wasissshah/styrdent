@@ -44,7 +44,7 @@ export default function Footer() {
                                     <div className="footer-one-about-contact mb-lg-5">
                                         <p className="letter-spacing text-uppercase text-white">Contact us</p>
                                         <ul>
-                                            <li><Link href="mailto:Loanlift@gmail.com"><i
+                                            <li><Link href="mailto:info@strydentdefense.com"><i
                                                 className="flaticon-envelope"></i>info@strydentdefense.com</Link></li>
                                             <li><Link href="tel:(555) 123-4567"><i className="flaticon-phone"></i>+1
                                                 (555) 123-4567</Link></li>
@@ -72,7 +72,7 @@ export default function Footer() {
                     <div className="footer-lower">
                         <div className="container">
                             <div className="footer-copy-right-one">
-                                <p className="text-center">© Copyright STRYDENT. All rights reserved | Developed by <Link href="/">DESIGN SPARTANS</Link></p>
+                                <p className="text-center">© Copyright STRYDENT. All rights reserved | Developed by <Link href="https://designspartans.com/" target={'_blank'}>DESIGN SPARTANS</Link></p>
                             </div>
                         </div>
                     </div>

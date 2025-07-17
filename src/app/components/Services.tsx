@@ -48,16 +48,16 @@ export default function Services() {
                     <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, ease: "easeIn" }}
+                        transition={{ ease: "easeIn" }}
                         className="col-lg-6 offset-lg-3 mb-2 mb-lg-5">
-                        <Image src="/img/auv-2.jpg" className="img-fluid object" width="782" height="345" alt="object" />
+                        <Image src="/img/auv-2.webp" className="img-fluid object" width="782" height="345" alt="object" />
                     </motion.div>
                 </div>
                 <div className="row">
                     <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        transition={{ delay: 1, ease: "easeIn" }}
                         className="col-lg-10 m-auto">
                         <div className="text-center mb-5">
                             <span className="heading-subtitle border-0 text-uppercase mb-0">About Us</span>
@@ -70,7 +70,7 @@ export default function Services() {
                     <motion.div
                         initial={{ opacity: 0, y: 50}}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                        transition={{ delay: 1, ease: "easeIn" }}
                         className="col-lg-6 m-auto">
                         <div className="heading-box text-center">
                             <h3 className="heading-title font-dm-sans text-uppercase fw-bolder">Advanced Features Powering Next-Gen AUVs</h3>
@@ -80,7 +80,7 @@ export default function Services() {
                 <motion.div
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                    transition={{ delay: 1, ease: "easeIn" }}
                     className="service-one-inner">
                     {services.map((service, index) => (
                         <div className="service-one-box" key={index}>

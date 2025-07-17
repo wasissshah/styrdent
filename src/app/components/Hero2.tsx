@@ -14,7 +14,7 @@ export default function Hero2() {
                     className="logo-lg fadeOut"
                     initial={{ opacity: 0, x: -400}}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, ease: "easeIn" }}
+                    transition={{ ease: "easeIn" }}
                     width="200"
                     height="100"
                     alt="logo" />
@@ -32,8 +32,7 @@ export default function Hero2() {
                                 muted
                                 playsInline
                             >
-                                <source src="/img/hero.mp4" type="video/mp4" />
-                                <source src="/img/hero.webm" type="video/webm" />
+                                <source src="/img/video/VID-20250715-WA0060.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -42,7 +41,7 @@ export default function Hero2() {
                                 className="m-auto"
                                 initial={{ opacity: 0, y: 50}}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 1, ease: "easeIn" }}
+                                transition={{ ease: "easeIn" }}
                             >
                                 <div className="banner-two-info text-center">
                                     <div className="section-details">

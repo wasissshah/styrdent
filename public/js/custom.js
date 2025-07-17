@@ -621,11 +621,11 @@
 
 
 
-    if ($('.contact-form-inner , .apply-loan-section').length) {
-        // filter section select option
-        var $disabledResults = $(".loan-type, .from-dropdown");
-        $disabledResults.select2();
-    }
+    // if ($('.contact-form-inner , .apply-loan-section').length) {
+    //     // filter section select option
+    //     var $disabledResults = $(".loan-type, .from-dropdown");
+    //     $disabledResults.select2();
+    // }
 
     // process bar
     if ($(".process-group").length) {

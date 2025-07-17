@@ -1,53 +1,192 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
-export default function ContactSection() {
-    return (
-        <div className="contact-section">
-            <div className="container">
-                <div className="heading-box text-center">
-                    <span className="heading-subtitle wow fadeInUp">🤝 CONTACT US</span>
-                    <h2 className="heading-title wow fadeInUp">Our Headquarters Location</h2>
+export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("https://strydentdefense.com/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus("Message sent successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          mobile: "",
+          message: "",
+        });
+      } else {
+        setStatus(data.message || "Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setStatus("Failed to send message. Please try again.");
+    }
+  };
+
+  return (
+    <div className="contact-form">
+      <div className="container">
+        <div className="row gutter-y-30">
+          <div className="col-lg-8">
+            <div className="contact-form-inner">
+              <form onSubmit={handleSubmit}>
+                <div className="inquiry-form-group-one">
+                  <label>
+                    <i className="fa-regular fa-user"></i>
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Your Name"
+                  />
                 </div>
-                <div className="row gutter-y-30 align-items-center">
-                    <div className="col-lg-6">
-                        <div className="row gutter-y-30">
-                            <div className="col-md-6">
-                                <div className="contact-location">
-                                    <Image src="/img/contact-us/englend-flag.jpg" width="54" height="36" alt="Country-flag" />
-                                        <h5>North Leighaport</h5>
-                                </div>
-                                <p>Suite 794 49823 Glover Fields, North Leighaport, MO</p>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="contact-location">
-                                    <Image src="/img/contact-us/canada-flag.jpg" width="54" height="36" alt="Country-flag" />
-                                        <h5>Canada</h5>
-                                </div>
-                                <p>Apt. 228 9976 Lesch Meadows, Yerview, RI 49061-3911</p>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="contact-location">
-                                    <Image src="/img/contact-us/usa-flag.jpg" width="54" height="36" alt="Country-flag" />
-                                        <h5>Schroederland</h5>
-                                </div>
-                                <p>13th Street, 47 W 13th St, New York, NY 10011, USA</p>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="contact-location">
-                                    <Image src="/img/contact-us/englend-flag.jpg" width="54" height="36" alt="Country-flag" />
-                                        <h5>New Zealand</h5>
-                                </div>
-                                <p>32729 White Canyon, Lake Cornellhaven, AL 19490-6873</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="map-image">
-                            <Image src="/img/Maps.png" width="636" height="329" alt="map-image" />
-                        </div>
-                    </div>
+                <div className="inquiry-form-group-one">
+                  <label>
+                    <i className="fa-solid fa-phone"></i>
+                  </label>
+                  <input
+                    type="number"
+                    name="mobile"
+                    value={formData.mobile}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Your Mobile Number"
+                  />
                 </div>
+                <div className="inquiry-form-group-one">
+                  <label>
+                    <i className="fa-regular fa-envelope"></i>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div className="inquiry-form-group-one">
+                  <label>
+                    <i className="fa-solid fa-message"></i>
+                  </label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Your Message Here"
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <div className="btn-wrapper">
+                    <button type="submit" className="btn btn-primary v2">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className={`form-status ${
+                    status.includes("successfully")
+                      ? "success"
+                      : status.includes("Failed")
+                      ? "error"
+                      : "info"
+                  }`}
+                >
+                  {status}
+                </p>
+              </form>
             </div>
+          </div>
+          <div className="col-lg-4">
+            <div className="contact-form-right">
+              <h3>Say Hii to STRYDENT</h3>
+              <Image
+                src="./img/contact-us/contact-from-image.jpg"
+                width="336"
+                height="224"
+                alt="team"
+                loading="lazy"
+                className="img-fluid"
+              />
+              <div className="contact-details">
+                <p className="text-white mb-0 letter-spacing text-uppercase">
+                  Phone
+                </p>
+                <a href="tel:+1 (555) 123-4567" className="menu-phone">
+                  {" "}
+                  <i className="flaticon-phone"></i>+1 (555) 123-4567
+                </a>
+                <p className="text-white mb-0 letter-spacing text-uppercase">
+                  Email
+                </p>
+                <a href="mailto:info@strydentdefense.com" className="menu-phone">
+                  {" "}
+                  <i className="flaticon-phone"></i>info@strydentdefense.com
+                </a>
+              </div>
+              <p className="text-white mb-0 letter-spacing text-uppercase">
+                Social media
+              </p>
+              <ul className="contact-social-media">
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <i className="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/">
+                    <i className="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <i className="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://in.linkedin.com/">
+                    <i className="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    );
-};
+      </div>
+    </div>
+  );
+}

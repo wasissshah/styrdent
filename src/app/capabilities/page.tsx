@@ -113,8 +113,7 @@ export default function Capabilities() {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.webm" type="video/webm" />
+                                            <source src="/img/video/VID-20250715-WA0058.mp4" type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -173,8 +172,7 @@ export default function Capabilities() {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.webm" type="video/webm" />
+                                            <source src="/img/video/VID-20250715-WA0059.mp4" type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -232,8 +230,7 @@ export default function Capabilities() {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.webm" type="video/webm" />
+                                            <source src="/img/video/VID-20250715-WA0060.mp4" type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -291,8 +288,7 @@ export default function Capabilities() {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.webm" type="video/webm" />
+                                            <source src="/img/video/VID-20250715-WA0061.mp4" type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -350,8 +346,7 @@ export default function Capabilities() {
                                             muted
                                             playsInline
                                         >
-                                            <source src="/img/tab-video.mp4" type="video/mp4" />
-                                            <source src="/img/tab-video.webm" type="video/webm" />
+                                            <source src="/img/video/VID-20250715-WA0062.mp4" type="video/mp4" />
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
